@@ -1,0 +1,177 @@
+/*
+
+
+*****************
+Table OF CONTENTS 
+*****************
+
+1. Fonts
+2. Mixins 
+3. Variables
+4. Home 
+ 4.1 Name
+ 4.2 Frontend Developer
+ 4.3 Hamburger Menu
+ 4.4 Image
+ 4.5 Logo 
+ 4.6 Navbar
+
+*/
+
+
+/*  ***** INFO *****  */
+.neighbourhood {
+    background:url("../Images/Neighbourhood/Street.jpg");
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:cover;
+    box-shadow:inset 0 0 0 4000px $lightdark;
+    margin:0;
+    margin-top:25px;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    -webkit-background-size:cover;
+    width:98%;
+    .content {
+        padding:100px;
+        .button {
+            background:transparent;
+            border:2px solid $light;
+            color:$light;
+            margin-left:5px;
+        }
+        .homes {
+            color:$light;
+            font-family:montserrat;
+            font-weight:bold;
+        }
+        p {
+            color:$light;
+            font-weight:bold;
+        }
+        .type {
+            width:450px;
+        }
+    }
+}
+
+
+@media (max-width:576px) {
+    .neighbourhood {
+        .content {
+            .button {
+                margin:0;
+                margin-top:25px;
+            }
+            input {
+                display:block;
+            }
+            .type {
+                width:260px;
+            }
+        }
+    }
+}
+
+
+@media (min-width:577px) and (max-width:768px) {
+    .neighbourhood {
+        .content {
+            .button {
+                margin:0;
+                margin-top:25px;
+            }
+            input {
+                display:block;
+            }
+        }
+    }
+}
+
+
+@media (min-width:1601px) and (max-width:2000px) {
+    .neighbourhood {
+        margin-top:31px;
+        .content {
+            padding:125px;
+            .button {
+                border:2.5px solid $light;
+                font-size:20px;
+                margin-left:6.2px;
+            }
+            p {
+                font-size:20px;
+            }
+            .type {
+                font-size:20px;
+                width:562px;
+            }
+        }
+    }
+}
+
+
+@media (min-width:2001px) and (max-width:2500px) {
+    .neighbourhood {
+        margin-top:38px;
+        .content {
+            padding:156px;
+            .button {
+                border:3.1px solid $light;
+                font-size:25px;
+                margin-left:7.7px;
+            }
+            p {
+                font-size:25px;
+            }
+            .type {
+                font-size:25px;
+                width:702px;
+            }
+        }
+    }
+}
+
+
+@media (min-width:2501px) and (max-width:3125px) {
+    .neighbourhood {
+        margin-top:47px;
+        .content {
+            padding:195px;
+            .button {
+                border:3.8px solid $light;
+                font-size:31px;
+                margin-left:9.6px;
+            }
+            p {
+                font-size:31px;
+            }
+            .type {
+                font-size:31px;
+                width:877px;
+            }
+        }
+    }
+}
+
+
+@media (min-width:3126px) {
+    .neighbourhood {
+        margin-top:58px;
+        .content {
+            padding:243px;
+            .button {
+                border:4.7px solid $light;
+                font-size:38px;
+                margin-left:12px;
+            }
+            p {
+                font-size:38px;
+            }
+            .type {
+                font-size:38px;
+                width:1096px;
+            }
+        }
+    }
+}

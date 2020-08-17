@@ -1,0 +1,3820 @@
+/*
+
+
+*****************
+TABLE OF CONTENTS 
+*****************
+
+1. Fonts
+2. Mixins 
+3. Variables
+4. Import/About 
+5. Blog 
+ 5.1 Content (after Heading)
+ 5.2 Heading 
+  5.2.1 Heading/H1
+6. Body 
+7. Coding 
+ 7.1 Left Side 
+ 7.2 Right Side 
+8. Contact 
+ 8.1 Contact Form 
+ 8.2 Info Area 
+ 8.3 Heading 
+  8.3.1 Heading/H1
+9. Footer 
+ 9.1 Content 
+  9.1.1 Social Icons
+10. Import/Home 
+11. Inputs 
+12. Import/Loader
+13. Mobile Apps 
+ 13.1 Left Side 
+ 13.2 Right Side
+ 13.3 Top 
+  13.3.1 Heading/H1
+14. Projects 
+ 14.1 Heading 
+  14.1.1 Heading/H1 
+ 14.2 Images 
+ 14.3 Filter Navbar
+15. Contact Form Textarea
+
+*/
+/*  ***** FONTS *****  */
+@font-face {
+  font-family: lora;
+  src: url("../Fonts/Lora/Lora-Regular.ttf");
+}
+
+@font-face {
+  font-family: montserrat;
+  src: url("../Fonts/Montserrat/Montserrat-Regular.ttf");
+}
+
+/*  ***** MIXINS *****  */
+/*  ***** VARIABLES *****  */
+/*  ***** BODY *****  */
+body {
+  background: #f2f2f2;
+  /*
+
+
+*****************
+Table OF CONTENTS 
+*****************
+
+1. Fonts
+2. Mixins 
+3. Variables
+4. Home 
+ 4.1 Name
+ 4.2 Frontend Developer
+ 4.3 Hamburger Menu
+ 4.4 Image
+ 4.5 Logo 
+ 4.6 Navbar
+
+*/
+  /*  ***** INFO *****  */
+  /*
+
+
+*****************
+Table OF CONTENTS 
+*****************
+
+1. Fonts
+2. Mixins 
+3. Variables
+4. Home 
+ 4.1 Name
+ 4.2 Frontend Developer
+ 4.3 Hamburger Menu
+ 4.4 Image
+ 4.5 Logo 
+ 4.6 Navbar
+
+*/
+  /*  ***** HOME *****  */
+  /*
+
+
+*****************
+Table OF CONTENTS 
+*****************
+
+1. Fonts
+2. Mixins 
+3. Variables
+4. Home 
+ 4.1 Name
+ 4.2 Frontend Developer
+ 4.3 Hamburger Menu
+ 4.4 Image
+ 4.5 Logo 
+ 4.6 Navbar
+
+*/
+  /*  ***** INFO *****  */
+  /*
+
+
+*****************
+Table OF CONTENTS 
+*****************
+
+1. Fonts
+2. Mixins 
+3. Variables
+4. Home 
+ 4.1 Name
+ 4.2 Frontend Developer
+ 4.3 Hamburger Menu
+ 4.4 Image
+ 4.5 Logo 
+ 4.6 Navbar
+
+*/
+  /*  ***** INFO *****  */
+}
+
+body .communities {
+  background: #ffffff;
+  -webkit-box-shadow: 8px 8px 6px -6px rgba(0, 0, 0, 0.35);
+          box-shadow: 8px 8px 6px -6px rgba(0, 0, 0, 0.35);
+  padding-bottom: 35px;
+  width: 98%;
+}
+
+body .communities .carousel-control-next-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23aaa' viewBox='0 0 8 8'%3E%3Cpath d='M1.5 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+  color: black;
+}
+
+body .communities .carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23aaa' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+  color: black;
+}
+
+body .communities .content {
+  margin-top: 15px;
+  width: 100%;
+}
+
+body .communities .content .brampton {
+  border: 15px solid #ffffff;
+  margin: 0;
+  padding: 0;
+}
+
+body .communities .content .brampton .img_background {
+  background: rgba(0, 0, 0, 0.35);
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+body .communities .content .brampton .img_background a {
+  background: transparent;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  font-family: montserrat;
+  font-weight: bold;
+  padding: 10px 50px 10px 50px;
+}
+
+body .communities .content .brampton .img_background a:hover {
+  background: transparent;
+  border: 1px solid #000000;
+  text-decoration: none;
+}
+
+body .communities .content .caledon {
+  border: 15px solid #ffffff;
+  margin: 0;
+  padding: 0;
+}
+
+body .communities .content .caledon .img_background {
+  background: rgba(0, 0, 0, 0.35);
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+body .communities .content .caledon .img_background a {
+  background: #ffffff;
+  border: 1px solid #ffffff;
+  color: #000000;
+  font-family: montserrat;
+  font-weight: bold;
+  padding: 10px 50px 10px 50px;
+}
+
+body .communities .content .caledon .img_background a:hover {
+  background: #f2f2f2;
+  text-decoration: none;
+}
+
+body .communities .content .etobicoke {
+  border: 15px solid #ffffff;
+  margin: 0;
+  padding: 0;
+}
+
+body .communities .content .etobicoke .img_background {
+  background: rgba(0, 0, 0, 0.35);
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+body .communities .content .etobicoke .img_background a {
+  background: #ffffff;
+  border: 1px solid #ffffff;
+  color: #000000;
+  font-family: montserrat;
+  font-weight: bold;
+  padding: 10px 50px 10px 50px;
+}
+
+body .communities .content .etobicoke .img_background a:hover {
+  background: #f2f2f2;
+  text-decoration: none;
+}
+
+body .communities .content .mississauga {
+  border: 15px solid #ffffff;
+  margin: 0;
+  padding: 0;
+}
+
+body .communities .content .mississauga .img_background {
+  background: rgba(0, 0, 0, 0.35);
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+body .communities .content .mississauga .img_background a {
+  background: #ffffff;
+  border: 1px solid #ffffff;
+  color: #000000;
+  font-family: montserrat;
+  font-weight: bold;
+  padding: 10px 50px 10px 50px;
+}
+
+body .communities .content .mississauga .img_background a:hover {
+  background: #f2f2f2;
+  text-decoration: none;
+}
+
+body .communities .content .toronto {
+  border: 15px solid #ffffff;
+  margin: 0;
+  padding: 0;
+}
+
+body .communities .content .toronto .img_background {
+  background: rgba(0, 0, 0, 0.35);
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+body .communities .content .toronto .img_background a {
+  background: transparent;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  font-family: montserrat;
+  font-weight: bold;
+  padding: 10px 50px 10px 50px;
+}
+
+body .communities .content .toronto .img_background a:hover {
+  background: transparent;
+  border: 1px solid #000000;
+  text-decoration: none;
+}
+
+body .communities .heading {
+  margin-top: 35px;
+  width: 75%;
+}
+
+body .communities .heading h5 {
+  font-family: montserrat;
+  margin-left: 15px;
+}
+
+@media (max-width: 576px) {
+  body .communities .content .brampton .img_background a {
+    padding: 5px 25px 5px 25px;
+  }
+  body .communities .content .caledon .img_background a {
+    padding: 5px 25px 5px 25px;
+  }
+  body .communities .content .etobicoke .img_background a {
+    padding: 5px 25px 5px 25px;
+  }
+  body .communities .content .mississauga .img_background a {
+    padding: 5px 25px 5px 25px;
+  }
+  body .communities .content .toronto .img_background a {
+    padding: 5px 25px 5px 25px;
+  }
+}
+
+@media (min-width: 1601px) and (max-width: 2000px) {
+  body .communities {
+    -webkit-box-shadow: 10px 10px 7.5px -7.5px rgba(0, 0, 0, 0.35);
+            box-shadow: 10px 10px 7.5px -7.5px rgba(0, 0, 0, 0.35);
+    padding-bottom: 43px;
+  }
+  body .communities .content {
+    margin-top: 18px;
+  }
+  body .communities .content .brampton {
+    border: 18px solid #ffffff;
+  }
+  body .communities .content .brampton .img_background a {
+    border: 1.25px solid #ffffff;
+    font-size: 20px;
+    padding: 12.5px 62px 12.5px 62px;
+  }
+  body .communities .content .brampton .img_background a:hover {
+    border: 1.25px solid #000000;
+  }
+  body .communities .content .caledon {
+    border: 18px solid #ffffff;
+  }
+  body .communities .content .caledon .img_background a {
+    border: 1.25px solid #ffffff;
+    font-size: 20px;
+    padding: 12.5px 62px 12.5px 62px;
+  }
+  body .communities .content .etobicoke {
+    border: 18px solid #ffffff;
+  }
+  body .communities .content .etobicoke .img_background a {
+    border: 1.25px solid #ffffff;
+    font-size: 20px;
+    padding: 12.5px 62px 12.5px 62px;
+  }
+  body .communities .content .mississauga {
+    border: 18px solid #ffffff;
+  }
+  body .communities .content .mississauga .img_background a {
+    border: 1.25px solid #ffffff;
+    font-size: 20px;
+    padding: 12.5px 62px 12.5px 62px;
+  }
+  body .communities .content .toronto {
+    border: 18px solid #ffffff;
+  }
+  body .communities .content .toronto .img_background a {
+    border: 1.25px solid #ffffff;
+    font-size: 20px;
+    padding: 12.5px 62px 12.5px 62px;
+  }
+  body .communities .content .toronto .img_background a:hover {
+    border: 1.25px solid #000000;
+  }
+  body .communities .heading {
+    margin-top: 43px;
+  }
+  body .communities .heading h5 {
+    font-size: 25px;
+    margin-left: 18px;
+  }
+}
+
+@media (min-width: 2001px) and (max-width: 2500px) {
+  body .communities {
+    -webkit-box-shadow: 12.5px 12.5px 9.3px -9.3px rgba(0, 0, 0, 0.35);
+            box-shadow: 12.5px 12.5px 9.3px -9.3px rgba(0, 0, 0, 0.35);
+    padding-bottom: 53px;
+  }
+  body .communities .content {
+    margin-top: 22px;
+  }
+  body .communities .content .brampton {
+    border: 22px solid #ffffff;
+  }
+  body .communities .content .brampton .img_background a {
+    border: 1.56px solid #ffffff;
+    font-size: 25px;
+    padding: 15.6px 77px 15.6px 77px;
+  }
+  body .communities .content .brampton .img_background a:hover {
+    border: 1.56px solid #000000;
+  }
+  body .communities .content .caledon {
+    border: 22px solid #ffffff;
+  }
+  body .communities .content .caledon .img_background a {
+    border: 1.56px solid #ffffff;
+    font-size: 25px;
+    padding: 15.6px 77px 15.6px 77px;
+  }
+  body .communities .content .etobicoke {
+    border: 22px solid #ffffff;
+  }
+  body .communities .content .etobicoke .img_background a {
+    border: 1.56px solid #ffffff;
+    font-size: 25px;
+    padding: 15.6px 77px 15.6px 77px;
+  }
+  body .communities .content .mississauga {
+    border: 22px solid #ffffff;
+  }
+  body .communities .content .mississauga .img_background a {
+    border: 1.56px solid #ffffff;
+    font-size: 25px;
+    padding: 15.6px 77px 15.6px 77px;
+  }
+  body .communities .content .toronto {
+    border: 22px solid #ffffff;
+  }
+  body .communities .content .toronto .img_background a {
+    border: 1.56px solid #ffffff;
+    font-size: 25px;
+    padding: 15.6px 77px 15.6px 77px;
+  }
+  body .communities .content .toronto .img_background a:hover {
+    border: 1.56px solid #000000;
+  }
+  body .communities .heading {
+    margin-top: 53px;
+  }
+  body .communities .heading h5 {
+    font-size: 31px;
+    margin-left: 22px;
+  }
+}
+
+@media (min-width: 2501px) and (max-width: 3125px) {
+  body .communities {
+    -webkit-box-shadow: 15.6px 15.6px 11.6px -11.6px rgba(0, 0, 0, 0.35);
+            box-shadow: 15.6px 15.6px 11.6px -11.6px rgba(0, 0, 0, 0.35);
+    padding-bottom: 66px;
+  }
+  body .communities .content {
+    margin-top: 27px;
+  }
+  body .communities .content .brampton {
+    border: 27px solid #ffffff;
+  }
+  body .communities .content .brampton .img_background a {
+    border: 1.95px solid #ffffff;
+    font-size: 31px;
+    padding: 19.5px 96px 19.5px 96px;
+  }
+  body .communities .content .brampton .img_background a:hover {
+    border: 1.95px solid #000000;
+  }
+  body .communities .content .caledon {
+    border: 27px solid #ffffff;
+  }
+  body .communities .content .caledon .img_background a {
+    border: 1.95px solid #ffffff;
+    font-size: 31px;
+    padding: 19.5px 96px 19.5px 96px;
+  }
+  body .communities .content .etobicoke {
+    border: 27px solid #ffffff;
+  }
+  body .communities .content .etobicoke .img_background a {
+    border: 1.95px solid #ffffff;
+    font-size: 31px;
+    padding: 19.5px 96px 19.5px 96px;
+  }
+  body .communities .content .mississauga {
+    border: 27px solid #ffffff;
+  }
+  body .communities .content .mississauga .img_background a {
+    border: 1.95px solid #ffffff;
+    font-size: 31px;
+    padding: 19.5px 96px 19.5px 96px;
+  }
+  body .communities .content .toronto {
+    border: 27px solid #ffffff;
+  }
+  body .communities .content .toronto .img_background a {
+    border: 1.95px solid #ffffff;
+    font-size: 31px;
+    padding: 19.5px 96px 19.5px 96px;
+  }
+  body .communities .content .toronto .img_background a:hover {
+    border: 1.95px solid #000000;
+  }
+  body .communities .heading {
+    margin-top: 66px;
+  }
+  body .communities .heading h5 {
+    font-size: 38px;
+    margin-left: 27px;
+  }
+}
+
+@media (min-width: 3126px) {
+  body .communities {
+    -webkit-box-shadow: 19.5px 19.5px 14.5px -14.5px rgba(0, 0, 0, 0.35);
+            box-shadow: 19.5px 19.5px 14.5px -14.5px rgba(0, 0, 0, 0.35);
+    padding-bottom: 82px;
+  }
+  body .communities .content {
+    margin-top: 33px;
+  }
+  body .communities .content .brampton {
+    border: 33px solid #ffffff;
+  }
+  body .communities .content .brampton .img_background a {
+    border: 2.43px solid #ffffff;
+    font-size: 38px;
+    padding: 24.3px 120px 24.3px 120px;
+  }
+  body .communities .content .brampton .img_background a:hover {
+    border: 2.43px solid #000000;
+  }
+  body .communities .content .caledon {
+    border: 33px solid #ffffff;
+  }
+  body .communities .content .caledon .img_background a {
+    border: 2.43px solid #ffffff;
+    font-size: 38px;
+    padding: 24.3px 120px 24.3px 120px;
+  }
+  body .communities .content .etobicoke {
+    border: 33px solid #ffffff;
+  }
+  body .communities .content .etobicoke .img_background a {
+    border: 2.43px solid #ffffff;
+    font-size: 38px;
+    padding: 24.3px 120px 24.3px 120px;
+  }
+  body .communities .content .mississauga {
+    border: 33px solid #ffffff;
+  }
+  body .communities .content .mississauga .img_background a {
+    border: 2.43px solid #ffffff;
+    font-size: 38px;
+    padding: 24.3px 120px 24.3px 120px;
+  }
+  body .communities .content .toronto {
+    border: 33px solid #ffffff;
+  }
+  body .communities .content .toronto .img_background a {
+    border: 2.43px solid #ffffff;
+    font-size: 38px;
+    padding: 24.3px 120px 24.3px 120px;
+  }
+  body .communities .content .toronto .img_background a:hover {
+    border: 2.43px solid #000000;
+  }
+  body .communities .heading {
+    margin-top: 82px;
+  }
+  body .communities .heading h5 {
+    font-size: 47px;
+    margin-left: 33px;
+  }
+}
+
+body .home {
+  background: url("../Images/Home/Background.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-box-shadow: inset 0 0 0 4000px rgba(0, 0, 0, 0.35);
+          box-shadow: inset 0 0 0 4000px rgba(0, 0, 0, 0.35);
+  height: 100vh;
+  margin: 0;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  position: relative;
+  -webkit-background-size: cover;
+  width: 98%;
+  z-index: 1;
+}
+
+body .home .info {
+  background: #f2f2f2;
+  position: relative;
+  z-index: 2;
+}
+
+body .home .info div div img {
+  display: inline;
+  margin-left: 200px;
+}
+
+body .home .info div div .mail {
+  margin-bottom: 15px;
+  margin-left: 85px;
+  margin-top: 15px;
+}
+
+body .home .info div div ul {
+  display: inline;
+  margin: 0;
+  margin-right: 200px;
+  padding: 0;
+}
+
+body .home .info div div ul li {
+  display: inline;
+  margin: 10px;
+  padding: 0;
+}
+
+body .home .info div div ul li a {
+  margin: 0;
+  padding: 0;
+}
+
+body .home .info div div ul li a:hover {
+  text-decoration: none;
+}
+
+body .home .info div div ul li a img {
+  margin: 0;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  padding: 0;
+}
+
+body .home .info div div p {
+  display: inline-block;
+  font-family: montserrat;
+  margin-left: 10px;
+}
+
+body .home .logo {
+  margin-left: 200px;
+  margin-top: 50px;
+}
+
+body .home .top {
+  position: relative;
+  width: 100%;
+  z-index: 2;
+}
+
+body .home .top div div ul {
+  display: inline;
+  list-style-type: none;
+  margin-right: 200px;
+  padding: 0;
+}
+
+body .home .top div div ul li {
+  display: inline;
+}
+
+body .home .top div div ul li a {
+  bottom: 20px;
+  color: #ffffff;
+  font-family: montserrat;
+  font-weight: bold;
+  margin: 0 12px 0 12px;
+  padding: 0;
+  position: relative;
+}
+
+body .home .top .home_hamburger {
+  background: rgba(0, 0, 0, 0.65);
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 50px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 10px;
+  position: fixed;
+  right: 0;
+  top: 0;
+  visibility: hidden;
+  width: 55px;
+  z-index: 21;
+}
+
+body .home .play {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 57.5px;
+  width: 100%;
+  z-index: 0;
+}
+
+body .home .play img {
+  cursor: pointer;
+}
+
+body .home .property_search {
+  height: 50px;
+  position: relative;
+  z-index: 2;
+}
+
+body .home .property_search .fields form .enter {
+  width: 425px;
+}
+
+body .home .property_search .fields form input {
+  font-family: montserrat;
+  margin-left: 20px;
+  padding: 4px 4px 4px 4px;
+  width: 150px;
+}
+
+body .home .property_search .fields form .submit {
+  background: transparent;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  padding: 4px 4px 4px 4px;
+}
+
+body .home .search {
+  color: #ffffff;
+  margin-top: 425px;
+  position: relative;
+  z-index: 2;
+}
+
+@media (max-height: 475px) {
+  body .home .play img {
+    display: none;
+  }
+}
+
+@media (max-width: 576px) {
+  body .home .info .mail {
+    display: none;
+  }
+  body .home .info .mail_address {
+    display: none;
+  }
+  body .home .info .phone {
+    margin: 0;
+    margin-bottom: 15px;
+    margin-top: 15px;
+  }
+  body .home .info .social {
+    margin: 0;
+  }
+  body .home .info .social ul {
+    margin: 0;
+  }
+  body .home .top .logo {
+    margin-left: 0;
+  }
+  body .home .top .menu .mobile {
+    background: #000000;
+    height: 100%;
+    position: fixed;
+    right: -300px;
+    top: 0;
+  }
+  body .home .top .menu .mobile ul li a {
+    display: block;
+    margin-top: 25px;
+  }
+  body .home .top .home_hamburger {
+    visibility: visible;
+  }
+  body .home .top .home_hamburger .home_line {
+    background: #f2f2f2;
+    height: 3px;
+    -webkit-transition: all 0.8s;
+    transition: all 0.8s;
+    width: 100%;
+  }
+  body .home .search {
+    display: none;
+  }
+  body .home .search_area .property_search {
+    display: none;
+  }
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+  body .home .info .mail {
+    display: none;
+  }
+  body .home .info .mail_address {
+    display: none;
+  }
+  body .home .info .phone {
+    margin: 0;
+    margin-bottom: 15px;
+    margin-top: 15px;
+  }
+  body .home .info .social {
+    margin: 0;
+  }
+  body .home .info .social ul {
+    margin: 0;
+  }
+  body .home .top .logo {
+    margin-left: 0;
+  }
+  body .home .top .menu .mobile {
+    background: #000000;
+    height: 100%;
+    position: fixed;
+    right: -300px;
+    top: 0;
+  }
+  body .home .top .menu .mobile ul li a {
+    display: block;
+    margin-top: 25px;
+  }
+  body .home .top .home_hamburger {
+    visibility: visible;
+  }
+  body .home .top .home_hamburger .home_line {
+    background: #f2f2f2;
+    height: 3px;
+    -webkit-transition: all 0.8s;
+    transition: all 0.8s;
+    width: 100%;
+  }
+  body .home .search {
+    display: none;
+  }
+  body .home .search_area .property_search {
+    display: none;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+  body .home .info .mail {
+    display: none;
+  }
+  body .home .info .mail_address {
+    display: none;
+  }
+  body .home .info .phone {
+    margin: 0;
+    margin-bottom: 15px;
+    margin-top: 15px;
+  }
+  body .home .info .social {
+    margin: 0;
+  }
+  body .home .info .social ul {
+    margin: 0;
+  }
+  body .home .top .logo {
+    margin-left: 0;
+  }
+  body .home .top .menu .mobile {
+    background: #000000;
+    height: 100%;
+    position: fixed;
+    right: -300px;
+    top: 0;
+  }
+  body .home .top .menu .mobile ul li a {
+    display: block;
+    margin-top: 25px;
+  }
+  body .home .top .home_hamburger {
+    visibility: visible;
+  }
+  body .home .top .home_hamburger .home_line {
+    background: #f2f2f2;
+    height: 3px;
+    -webkit-transition: all 0.8s;
+    transition: all 0.8s;
+    width: 100%;
+  }
+  body .home .search {
+    display: none;
+  }
+  body .home .search_area .property_search {
+    display: none;
+  }
+}
+
+@media (min-width: 993px) and (max-width: 1200px) {
+  body .home .info .mail {
+    display: none;
+  }
+  body .home .info .mail_address {
+    display: none;
+  }
+  body .home .info .phone {
+    margin: 0;
+    margin-bottom: 15px;
+    margin-top: 15px;
+  }
+  body .home .info .social {
+    margin: 0;
+  }
+  body .home .info .social ul {
+    margin: 0;
+  }
+  body .home .top .logo {
+    margin-left: 0;
+  }
+  body .home .top .menu .mobile {
+    background: #000000;
+    height: 100%;
+    position: fixed;
+    right: -300px;
+    top: 0;
+  }
+  body .home .top .menu .mobile ul li a {
+    display: block;
+    margin-top: 25px;
+  }
+  body .home .top .home_hamburger {
+    visibility: visible;
+  }
+  body .home .top .home_hamburger .home_line {
+    background: #f2f2f2;
+    height: 3px;
+    -webkit-transition: all 0.8s;
+    transition: all 0.8s;
+    width: 100%;
+  }
+  body .home .search {
+    display: none;
+  }
+  body .home .search_area .property_search {
+    display: none;
+  }
+}
+
+@media (min-width: 1201px) and (max-width: 1225px) {
+  body .home .search {
+    display: none;
+  }
+  body .home .search_area .property_search {
+    display: none;
+  }
+}
+
+@media (min-width: 1201px) and (max-width: 1425px) {
+  body .home .info .mail {
+    display: none;
+  }
+  body .home .info .mail_address {
+    display: none;
+  }
+  body .home .info .phone {
+    margin-bottom: 15px;
+    margin-top: 15px;
+  }
+}
+
+@media (min-width: 1201px) and (max-width: 1550px) {
+  body .home .top .menu .mobile {
+    background: #000000;
+    height: 100%;
+    position: fixed;
+    right: -300px;
+    top: 0;
+  }
+  body .home .top .menu .mobile ul li a {
+    display: block;
+    margin-top: 25px;
+  }
+  body .home .top .home_hamburger {
+    visibility: visible;
+  }
+  body .home .top .home_hamburger .home_line {
+    background: #f2f2f2;
+    height: 3px;
+    -webkit-transition: all 0.8s;
+    transition: all 0.8s;
+    width: 100%;
+  }
+}
+
+body .home_change .home_lineBottom {
+  -webkit-transform: rotateZ(405deg) translate(-8px, -6px);
+          transform: rotateZ(405deg) translate(-8px, -6px);
+}
+
+body .home_change .home_lineMiddle {
+  opacity: 0;
+}
+
+body .home_change .home_lineTop {
+  -webkit-transform: rotateZ(-405deg) translate(-8px, 6px);
+          transform: rotateZ(-405deg) translate(-8px, 6px);
+}
+
+body .home_change .mobile {
+  left: calc(100% - 300px);
+}
+
+@media (min-width: 1601px) and (max-width: 2000px) {
+  body .home .info div div img {
+    margin-left: 250px;
+  }
+  body .home .info div div p {
+    font-size: 20px;
+  }
+  body .home .info div div .mail {
+    height: 31px;
+    margin-bottom: 18px;
+    margin-left: 106px;
+    margin-top: 18px;
+    width: 42px;
+  }
+  body .home .info div div .phone {
+    height: 31px;
+    width: 31px;
+  }
+  body .home .info div div ul {
+    margin-right: 250px;
+  }
+  body .home .info div div ul li {
+    margin: 12.5px;
+  }
+  body .home .info div div ul li a img {
+    height: 32px;
+    margin-bottom: 18px;
+    margin-top: 18px;
+    width: 33px;
+  }
+  body .home .info div div p {
+    margin-left: 12.5px;
+  }
+  body .home .logo {
+    height: 87px;
+    margin-left: 250px;
+    margin-top: 62px;
+    width: 375px;
+  }
+  body .home .top div div ul {
+    margin-right: 250px;
+  }
+  body .home .top div div ul li a {
+    bottom: 25px;
+    font-size: 18px;
+    margin: 0 15px 0 15px;
+  }
+  body .home .top .home_hamburger {
+    height: 62px;
+    padding: 12.5px;
+    width: 68px;
+  }
+  body .home .play {
+    top: 71px;
+  }
+  body .home .play img {
+    height: 120px;
+    width: 120px;
+  }
+  body .home .property_search {
+    height: 62px;
+  }
+  body .home .property_search .fields form .enter {
+    font-size: 20px;
+    width: 531px;
+  }
+  body .home .property_search .fields form input {
+    margin-left: 25px;
+    padding: 5px 5px 5px 5px;
+    width: 187px;
+  }
+  body .home .property_search .fields form .inputs {
+    font-size: 20px;
+  }
+  body .home .property_search .fields form .submit {
+    border: 1.25px solid #ffffff;
+    font-size: 20px;
+    padding: 5px 5px 5px 5px;
+  }
+  body .home .property_search img {
+    height: 65px;
+    width: 65px;
+  }
+  body .home .search {
+    font-size: 20px;
+    margin-top: 531px;
+  }
+}
+
+@media (min-width: 2001px) and (max-width: 2500px) {
+  body .home .info div div img {
+    margin-left: 312px;
+  }
+  body .home .info div div p {
+    font-size: 25px;
+  }
+  body .home .info div div .mail {
+    height: 38px;
+    margin-bottom: 22px;
+    margin-left: 132px;
+    margin-top: 22px;
+    width: 52px;
+  }
+  body .home .info div div .phone {
+    height: 38px;
+    width: 38px;
+  }
+  body .home .info div div ul {
+    margin-right: 312px;
+  }
+  body .home .info div div ul li {
+    margin: 15.6px;
+  }
+  body .home .info div div ul li a img {
+    height: 40px;
+    margin-bottom: 22px;
+    margin-top: 22px;
+    width: 41px;
+  }
+  body .home .info div div p {
+    margin-left: 15.6px;
+  }
+  body .home .logo {
+    height: 108px;
+    margin-left: 312px;
+    margin-top: 77px;
+    width: 468px;
+  }
+  body .home .top div div ul {
+    margin-right: 312px;
+  }
+  body .home .top div div ul li a {
+    bottom: 31px;
+    font-size: 22px;
+    margin: 0 18px 0 18px;
+  }
+  body .home .top .home_hamburger {
+    height: 77px;
+    padding: 15.6px;
+    width: 85px;
+  }
+  body .home .play {
+    top: 88px;
+  }
+  body .home .play img {
+    height: 150px;
+    width: 150px;
+  }
+  body .home .property_search {
+    height: 77px;
+  }
+  body .home .property_search .fields form .enter {
+    font-size: 25px;
+    width: 663px;
+  }
+  body .home .property_search .fields form input {
+    margin-left: 31px;
+    padding: 6.2px 6.2px 6.2px 6.2px;
+    width: 233px;
+  }
+  body .home .property_search .fields form .inputs {
+    font-size: 25px;
+  }
+  body .home .property_search .fields form .submit {
+    border: 1.56px solid #ffffff;
+    font-size: 25px;
+    padding: 6.2px 6.2px 6.2px 6.2px;
+  }
+  body .home .property_search img {
+    height: 81px;
+    width: 81px;
+  }
+  body .home .search {
+    font-size: 25px;
+    margin-top: 663px;
+  }
+}
+
+@media (min-width: 2501px) and (max-width: 3125px) {
+  body .home .info div div img {
+    margin-left: 390px;
+  }
+  body .home .info div div p {
+    font-size: 31px;
+  }
+  body .home .info div div .mail {
+    height: 47px;
+    margin-bottom: 27px;
+    margin-left: 165px;
+    margin-top: 27px;
+    width: 65px;
+  }
+  body .home .info div div .phone {
+    height: 47px;
+    width: 47px;
+  }
+  body .home .info div div ul {
+    margin-right: 390px;
+  }
+  body .home .info div div ul li {
+    margin: 19.5px;
+  }
+  body .home .info div div ul li a img {
+    height: 50px;
+    margin-bottom: 27px;
+    margin-top: 27px;
+    width: 51px;
+  }
+  body .home .info div div p {
+    margin-left: 19.5px;
+  }
+  body .home .logo {
+    height: 135px;
+    margin-left: 390px;
+    margin-top: 96px;
+    width: 585px;
+  }
+  body .home .top div div ul {
+    margin-right: 390px;
+  }
+  body .home .top div div ul li a {
+    bottom: 38px;
+    font-size: 27px;
+    margin: 0 22px 0 22px;
+  }
+  body .home .top .home_hamburger {
+    height: 96px;
+    padding: 19.5px;
+    width: 106px;
+  }
+  body .home .play {
+    top: 110px;
+  }
+  body .home .play img {
+    height: 187px;
+    width: 187px;
+  }
+  body .home .property_search {
+    height: 96px;
+  }
+  body .home .property_search .fields form .enter {
+    font-size: 31px;
+    width: 828px;
+  }
+  body .home .property_search .fields form input {
+    margin-left: 38px;
+    padding: 7.7px 7.7px 7.7px 7.7px;
+    width: 291px;
+  }
+  body .home .property_search .fields form .inputs {
+    font-size: 31px;
+  }
+  body .home .property_search .fields form .submit {
+    border: 1.95px solid #ffffff;
+    font-size: 31px;
+    padding: 7.7px 7.7px 7.7px 7.7px;
+  }
+  body .home .property_search img {
+    height: 101px;
+    width: 101px;
+  }
+  body .home .search {
+    font-size: 31px;
+    margin-top: 828px;
+  }
+}
+
+@media (min-width: 3126px) {
+  body .home .info div div img {
+    margin-left: 487px;
+  }
+  body .home .info div div p {
+    font-size: 38px;
+  }
+  body .home .info div div .mail {
+    height: 58px;
+    margin-bottom: 33px;
+    margin-left: 206px;
+    margin-top: 33px;
+    width: 81px;
+  }
+  body .home .info div div .phone {
+    height: 58px;
+    width: 58px;
+  }
+  body .home .info div div ul {
+    margin-right: 487px;
+  }
+  body .home .info div div ul li {
+    margin: 24.3px;
+  }
+  body .home .info div div ul li a img {
+    height: 62px;
+    margin-bottom: 33px;
+    margin-top: 33px;
+    width: 63px;
+  }
+  body .home .info div div p {
+    margin-left: 24.3px;
+  }
+  body .home .logo {
+    height: 168px;
+    margin-left: 487px;
+    margin-top: 120px;
+    width: 731px;
+  }
+  body .home .top div div ul {
+    margin-right: 487px;
+  }
+  body .home .top div div ul li a {
+    bottom: 47px;
+    font-size: 33px;
+    margin: 0 27px 0 27px;
+  }
+  body .home .top .home_hamburger {
+    height: 120px;
+    padding: 24.3px;
+    width: 132px;
+  }
+  body .home .play {
+    top: 137px;
+  }
+  body .home .play img {
+    height: 233px;
+    width: 233px;
+  }
+  body .home .property_search {
+    height: 120px;
+  }
+  body .home .property_search .fields form .enter {
+    font-size: 38px;
+    width: 1035px;
+  }
+  body .home .property_search .fields form input {
+    margin-left: 47px;
+    padding: 9.6px 9.6px 9.6px 9.6px;
+    width: 363px;
+  }
+  body .home .property_search .fields form .inputs {
+    font-size: 38px;
+  }
+  body .home .property_search .fields form .submit {
+    border: 2.43px solid #ffffff;
+    font-size: 38px;
+    padding: 9.6px 9.6px 9.6px 9.6px;
+  }
+  body .home .property_search img {
+    height: 126px;
+    width: 126px;
+  }
+  body .home .search {
+    font-size: 38px;
+    margin-top: 1035px;
+  }
+}
+
+body .info_block {
+  width: 98%;
+}
+
+body .info_block .content {
+  margin-bottom: 60px;
+  margin-top: 50px;
+}
+
+body .info_block .content .block {
+  border: 15px solid #f2f2f2;
+}
+
+body .info_block .content .block .holder .button {
+  background: rgba(0, 0, 0, 0.35);
+  height: 100%;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+body .info_block .content .block .holder .button a {
+  background: #ffffff;
+  color: #000000;
+  font-family: montserrat;
+  font-weight: bold;
+  padding: 10px 50px 10px 50px;
+}
+
+body .info_block .content .block .holder .button a:hover {
+  background: #f2f2f2;
+  text-decoration: none;
+}
+
+body .info_block .content .block .holder .button .transparent {
+  background: transparent;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  font-family: montserrat;
+  font-weight: bold;
+  padding: 10px 50px 10px 50px;
+}
+
+body .info_block .content .block .holder .button .transparent:hover {
+  background: transparent;
+  border: 1px solid #000000;
+  text-decoration: none;
+}
+
+@media (min-width: 1601px) and (max-width: 2000px) {
+  body .info_block .content {
+    margin-bottom: 75px;
+    margin-top: 62px;
+  }
+  body .info_block .content .block {
+    border: 18px solid #f2f2f2;
+  }
+  body .info_block .content .block .holder .button a {
+    font-size: 20px;
+    padding: 12.5px 62px 12.5px 62px;
+  }
+  body .info_block .content .block .holder .button .transparent {
+    border: 1.25px solid #ffffff;
+    padding: 12.5px 62px 12.5px 62px;
+  }
+  body .info_block .content .block .holder .button .transparent:hover {
+    border: 1.25px solid #000000;
+  }
+}
+
+@media (min-width: 2001px) and (max-width: 2500px) {
+  body .info_block .content {
+    margin-bottom: 93px;
+    margin-top: 77px;
+  }
+  body .info_block .content .block {
+    border: 22px solid #f2f2f2;
+  }
+  body .info_block .content .block .holder .button a {
+    font-size: 25px;
+    padding: 15.6px 77px 15.6px 77px;
+  }
+  body .info_block .content .block .holder .button .transparent {
+    border: 1.56px solid #ffffff;
+    padding: 15.6px 77px 15.6px 77px;
+  }
+  body .info_block .content .block .holder .button .transparent:hover {
+    border: 1.56px solid #000000;
+  }
+}
+
+@media (min-width: 2501px) and (max-width: 3125px) {
+  body .info_block .content {
+    margin-bottom: 116px;
+    margin-top: 96px;
+  }
+  body .info_block .content .block {
+    border: 27px solid #f2f2f2;
+  }
+  body .info_block .content .block .holder .button a {
+    font-size: 31px;
+    padding: 19.5px 96px 19.5px 96px;
+  }
+  body .info_block .content .block .holder .button .transparent {
+    border: 1.95px solid #ffffff;
+    padding: 19.5px 96px 19.5px 96px;
+  }
+  body .info_block .content .block .holder .button .transparent:hover {
+    border: 1.95px solid #000000;
+  }
+}
+
+@media (min-width: 3126px) {
+  body .info_block .content {
+    margin-bottom: 145px;
+    margin-top: 120px;
+  }
+  body .info_block .content .block {
+    border: 33px solid #f2f2f2;
+  }
+  body .info_block .content .block .holder .button a {
+    font-size: 38px;
+    padding: 24.3px 120px 24.3px 120px;
+  }
+  body .info_block .content .block .holder .button .transparent {
+    border: 2.43px solid #ffffff;
+    padding: 24.3px 120px 24.3px 120px;
+  }
+  body .info_block .content .block .holder .button .transparent:hover {
+    border: 2.43px solid #000000;
+  }
+}
+
+body .neighbourhood {
+  background: url("../Images/Neighbourhood/Street.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-box-shadow: inset 0 0 0 4000px rgba(0, 0, 0, 0.35);
+          box-shadow: inset 0 0 0 4000px rgba(0, 0, 0, 0.35);
+  margin: 0;
+  margin-top: 25px;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  width: 98%;
+}
+
+body .neighbourhood .content {
+  padding: 100px;
+}
+
+body .neighbourhood .content .button {
+  background: transparent;
+  border: 2px solid #ffffff;
+  color: #ffffff;
+  margin-left: 5px;
+}
+
+body .neighbourhood .content .homes {
+  color: #ffffff;
+  font-family: montserrat;
+  font-weight: bold;
+}
+
+body .neighbourhood .content p {
+  color: #ffffff;
+  font-weight: bold;
+}
+
+body .neighbourhood .content .type {
+  width: 450px;
+}
+
+@media (max-width: 576px) {
+  body .neighbourhood .content .button {
+    margin: 0;
+    margin-top: 25px;
+  }
+  body .neighbourhood .content input {
+    display: block;
+  }
+  body .neighbourhood .content .type {
+    width: 260px;
+  }
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+  body .neighbourhood .content .button {
+    margin: 0;
+    margin-top: 25px;
+  }
+  body .neighbourhood .content input {
+    display: block;
+  }
+}
+
+@media (min-width: 1601px) and (max-width: 2000px) {
+  body .neighbourhood {
+    margin-top: 31px;
+  }
+  body .neighbourhood .content {
+    padding: 125px;
+  }
+  body .neighbourhood .content .button {
+    border: 2.5px solid #ffffff;
+    font-size: 20px;
+    margin-left: 6.2px;
+  }
+  body .neighbourhood .content p {
+    font-size: 20px;
+  }
+  body .neighbourhood .content .type {
+    font-size: 20px;
+    width: 562px;
+  }
+}
+
+@media (min-width: 2001px) and (max-width: 2500px) {
+  body .neighbourhood {
+    margin-top: 38px;
+  }
+  body .neighbourhood .content {
+    padding: 156px;
+  }
+  body .neighbourhood .content .button {
+    border: 3.1px solid #ffffff;
+    font-size: 25px;
+    margin-left: 7.7px;
+  }
+  body .neighbourhood .content p {
+    font-size: 25px;
+  }
+  body .neighbourhood .content .type {
+    font-size: 25px;
+    width: 702px;
+  }
+}
+
+@media (min-width: 2501px) and (max-width: 3125px) {
+  body .neighbourhood {
+    margin-top: 47px;
+  }
+  body .neighbourhood .content {
+    padding: 195px;
+  }
+  body .neighbourhood .content .button {
+    border: 3.8px solid #ffffff;
+    font-size: 31px;
+    margin-left: 9.6px;
+  }
+  body .neighbourhood .content p {
+    font-size: 31px;
+  }
+  body .neighbourhood .content .type {
+    font-size: 31px;
+    width: 877px;
+  }
+}
+
+@media (min-width: 3126px) {
+  body .neighbourhood {
+    margin-top: 58px;
+  }
+  body .neighbourhood .content {
+    padding: 243px;
+  }
+  body .neighbourhood .content .button {
+    border: 4.7px solid #ffffff;
+    font-size: 38px;
+    margin-left: 12px;
+  }
+  body .neighbourhood .content p {
+    font-size: 38px;
+  }
+  body .neighbourhood .content .type {
+    font-size: 38px;
+    width: 1096px;
+  }
+}
+
+.contact {
+  background: url("../Images/Contact/Contact.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-box-shadow: inset 0 0 0 4000px rgba(0, 0, 0, 0.65);
+          box-shadow: inset 0 0 0 4000px rgba(0, 0, 0, 0.65);
+  margin: 0;
+  margin-top: 30px;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  width: 98%;
+}
+
+.contact .content {
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+.contact .content form {
+  margin: 0;
+  margin-top: 25px;
+  padding: 0;
+}
+
+.contact .content form .form_field {
+  border: 15px solid transparent;
+  display: inline;
+}
+
+.contact .content form .form_field .field {
+  background: rgba(255, 255, 255, 0.85);
+  height: 40px;
+  width: 325px;
+}
+
+.contact .content form .form_field .field .email {
+  display: inline;
+}
+
+.contact .content form .form_field .field .name {
+  display: inline;
+}
+
+.contact .content form .form_fieldMessage {
+  border: 15px solid transparent;
+}
+
+.contact .content form .form_fieldMessage textarea {
+  background: rgba(255, 255, 255, 0.85);
+  height: 200px;
+  width: 684.5px;
+}
+
+.contact .content form .mail {
+  display: inline;
+  margin-left: 30px;
+}
+
+.contact .content form p {
+  color: #ffffff;
+  display: inline;
+  font-family: montserrat;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+.contact .content form .phone {
+  display: inline;
+  margin-left: 15px;
+}
+
+.contact .content form .social {
+  display: inline;
+  margin-left: 30px;
+}
+
+.contact .content form .social img {
+  margin-right: 7px;
+}
+
+.contact .content form .submit {
+  background: transparent;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  font-family: montserrat;
+  margin-left: 15px;
+  margin-top: 15px;
+  padding: 10px 40px 10px 40px;
+}
+
+.contact .content h5 {
+  color: #ffffff;
+  font-family: montserrat;
+  margin: 0;
+  margin-left: 15px;
+  padding: 0;
+}
+
+footer {
+  background: #ffffff;
+  -webkit-box-shadow: 8px 8px 6px -6px rgba(0, 0, 0, 0.35);
+          box-shadow: 8px 8px 6px -6px rgba(0, 0, 0, 0.35);
+  font-family: montserrat;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  width: 98%;
+}
+
+footer .bottom {
+  margin: 0;
+  margin-bottom: 30px;
+  margin-left: 100px;
+  margin-top: 25px;
+}
+
+footer .content {
+  margin-left: 100px;
+  margin-top: 30px;
+  width: 800px;
+}
+
+footer .content .info {
+  margin-top: 20px;
+}
+
+footer .content .line {
+  background: #000000;
+  height: 2px;
+  width: 800px;
+}
+
+footer .content .mail_info {
+  margin-top: 15px;
+}
+
+footer .content .mail_info .email {
+  display: inline;
+  margin-left: 10px;
+}
+
+footer .content .mail_info .mail {
+  display: inline;
+}
+
+footer .content .menu {
+  margin-top: 20px;
+}
+
+footer .content .number {
+  display: inline;
+  margin-left: 10px;
+}
+
+footer .content .option {
+  color: #000000;
+  display: block;
+  text-decoration: none;
+}
+
+footer .content .option:hover {
+  color: #81838a;
+}
+
+footer .content .phone {
+  display: inline;
+}
+
+input[placeholder] {
+  font-family: montserrat;
+  padding-left: 15px;
+}
+
+.properties {
+  padding-bottom: 35px;
+  width: 98%;
+}
+
+.properties .carousel-control-next-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23aaa' viewBox='0 0 8 8'%3E%3Cpath d='M1.5 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+  color: black;
+}
+
+.properties .carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23aaa' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+  color: black;
+}
+
+.properties .content {
+  margin-top: 15px;
+  width: 100%;
+}
+
+.properties .content .caledon {
+  border: 15px solid #f2f2f2;
+  margin: 0;
+  padding: 0;
+}
+
+.properties .content .caledon .img_background {
+  background: rgba(0, 0, 0, 0.35);
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.properties .content .caledon .img_background a {
+  background: transparent;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  font-family: montserrat;
+  font-weight: bold;
+  padding: 10px 50px 10px 50px;
+}
+
+.properties .content .caledon .img_background a:hover {
+  background: transparent;
+  border: 1px solid #000000;
+  text-decoration: none;
+}
+
+.properties .content .etobicoke {
+  border: 15px solid #f2f2f2;
+  margin: 0;
+  padding: 0;
+}
+
+.properties .content .etobicoke .img_background {
+  background: rgba(0, 0, 0, 0.35);
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.properties .content .etobicoke .img_background a {
+  background: #ffffff;
+  border: 1px solid #ffffff;
+  color: #000000;
+  font-family: montserrat;
+  font-weight: bold;
+  padding: 10px 50px 10px 50px;
+}
+
+.properties .content .etobicoke .img_background a:hover {
+  background: #f2f2f2;
+  text-decoration: none;
+}
+
+.properties .content .mississauga {
+  border: 15px solid #f2f2f2;
+  margin: 0;
+  padding: 0;
+}
+
+.properties .content .mississauga .img_background {
+  background: rgba(0, 0, 0, 0.35);
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.properties .content .mississauga .img_background a {
+  background: #ffffff;
+  border: 1px solid #ffffff;
+  color: #000000;
+  font-family: montserrat;
+  font-weight: bold;
+  padding: 10px 50px 10px 50px;
+}
+
+.properties .content .mississauga .img_background a:hover {
+  background: #f2f2f2;
+  text-decoration: none;
+}
+
+.properties .content .mississauga_transparent {
+  border: 15px solid #f2f2f2;
+  margin: 0;
+  padding: 0;
+}
+
+.properties .content .mississauga_transparent .img_background {
+  background: rgba(0, 0, 0, 0.35);
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.properties .content .mississauga_transparent .img_background a {
+  background: transparent;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  font-family: montserrat;
+  font-weight: bold;
+  padding: 10px 50px 10px 50px;
+}
+
+.properties .content .mississauga_transparent .img_background a:hover {
+  background: transparent;
+  border: 1px solid #000000;
+  text-decoration: none;
+}
+
+.properties .content .toronto {
+  border: 15px solid #f2f2f2;
+  margin: 0;
+  padding: 0;
+}
+
+.properties .content .toronto .img_background {
+  background: rgba(0, 0, 0, 0.35);
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.properties .content .toronto .img_background a {
+  background: #ffffff;
+  border: 1px solid #ffffff;
+  color: #000000;
+  font-family: montserrat;
+  font-weight: bold;
+  padding: 10px 50px 10px 50px;
+}
+
+.properties .content .toronto .img_background a:hover {
+  background: #f2f2f2;
+  text-decoration: none;
+}
+
+.properties .content .toronto_transparent {
+  border: 15px solid #f2f2f2;
+  margin: 0;
+  padding: 0;
+}
+
+.properties .content .toronto_transparent .img_background {
+  background: rgba(0, 0, 0, 0.35);
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.properties .content .toronto_transparent .img_background a {
+  background: transparent;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  font-family: montserrat;
+  font-weight: bold;
+  padding: 10px 50px 10px 50px;
+}
+
+.properties .content .toronto_transparent .img_background a:hover {
+  background: transparent;
+  border: 1px solid #000000;
+  text-decoration: none;
+}
+
+.properties .heading {
+  margin-top: 35px;
+  width: 75%;
+}
+
+.properties .heading h5 {
+  font-family: montserrat;
+  margin-left: 15px;
+}
+
+.testimonials {
+  background: #ffffff;
+  font-family: montserrat;
+  margin-top: 25px;
+  width: 98%;
+}
+
+.testimonials .content {
+  margin-bottom: 100px;
+  margin-top: 100px;
+}
+
+.testimonials .content .carousel-control-next-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23aaa' viewBox='0 0 8 8'%3E%3Cpath d='M1.5 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+  color: black;
+}
+
+.testimonials .content .carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23aaa' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+  color: black;
+}
+
+.testimonials .content .heading {
+  background: url("../Images/Testimonials/Quote.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 168px;
+  margin: 0;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  width: 200px;
+}
+
+.testimonials .content .heading h5 {
+  position: relative;
+  top: 115px;
+}
+
+.testimonials .content p {
+  margin-top: 35px;
+}
+
+.testimonials .content .slide {
+  height: 300px;
+}
+
+.testimonials .content .slide .carousel-indicators .indicator {
+  border: 1px solid #000000;
+}
+
+.testimonials .content .slide .carousel-inner {
+  margin-top: 40px;
+  width: 75%;
+}
+
+textarea[placeholder] {
+  font-family: montserrat;
+  padding-left: 15px;
+}
+
+.tina {
+  background: #ffffff;
+  margin-top: 25px;
+  width: 98%;
+}
+
+.tina .left {
+  background: url("../Images/Tina/Tina.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-box-shadow: inset 0 0 0 4000px rgba(0, 0, 0, 0.35);
+          box-shadow: inset 0 0 0 4000px rgba(0, 0, 0, 0.35);
+  margin: 0;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+}
+
+.tina .right {
+  -webkit-box-shadow: 8px 8px 6px -6px rgba(0, 0, 0, 0.35);
+          box-shadow: 8px 8px 6px -6px rgba(0, 0, 0, 0.35);
+}
+
+.tina .right .button {
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+
+.tina .right .button a {
+  background: transparent;
+  border: 2px solid #81838a;
+  color: #81838a;
+  padding: 10px 40px 10px 40px;
+}
+
+.tina .right h4 {
+  font-size: 24px;
+  font-family: lora;
+  font-weight: bold;
+}
+
+.tina .right h5 {
+  font-family: montserrat;
+}
+
+.tina .right .mail_address {
+  margin-top: 15px;
+}
+
+.tina .right .mail_address .mail {
+  color: #81838a;
+  display: inline;
+  font-family: montserrat;
+  margin-left: 10px;
+}
+
+.tina .right p {
+  font-family: lora;
+  text-align: justify;
+}
+
+.tina .right .phone_number {
+  margin-top: 25px;
+}
+
+.tina .right .phone_number .number {
+  color: #81838a;
+  display: inline;
+  font-family: montserrat;
+  margin-left: 10px;
+}
+
+.tina .right .text {
+  margin-left: 75px;
+  margin-top: 30px;
+}
+
+.worth {
+  background: url("../Images/Worth/Building.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-box-shadow: inset 0 0 0 4000px rgba(0, 0, 0, 0.35);
+          box-shadow: inset 0 0 0 4000px rgba(0, 0, 0, 0.35);
+  margin: 0;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  width: 98%;
+}
+
+.worth .content {
+  padding: 100px;
+}
+
+.worth .content .button {
+  background: transparent;
+  border: 2px solid #ffffff;
+  color: #ffffff;
+  margin-left: 5px;
+}
+
+.worth .content .homes {
+  color: #ffffff;
+  font-family: montserrat;
+  font-weight: bold;
+}
+
+.worth .content p {
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.worth .content .type {
+  width: 450px;
+}
+
+@media (max-width: 576px) {
+  .contact .content form .form_field {
+    display: block;
+  }
+  .contact .content form .form_field .field {
+    width: 275px;
+  }
+  .contact .content form .form_field .field .email {
+    display: block;
+  }
+  .contact .content form .form_field .field .name {
+    display: block;
+  }
+  .contact .content form .form_fieldMessage {
+    border: 15px solid transparent;
+  }
+  .contact .content form .form_fieldMessage textarea {
+    width: 275px;
+  }
+  .contact .content form .mail {
+    display: block;
+    margin: 0;
+    margin-left: 15px;
+    margin-top: 20px;
+    padding: 0;
+  }
+  .contact .content form p {
+    display: inline;
+    margin-left: 10px;
+  }
+  .contact .content form .phone {
+    display: block;
+  }
+  .contact .content form .social {
+    display: inline;
+    margin-left: 15px;
+  }
+  .contact .content form .social img {
+    margin-right: 7px;
+    margin-top: 20px;
+  }
+  .contact .content form .submit {
+    margin-left: 15px;
+    margin-top: 15px;
+    padding: 10px 40px 10px 40px;
+  }
+  .contact .content h5 {
+    color: #ffffff;
+    font-family: montserrat;
+    margin: 0;
+    margin-left: 15px;
+    padding: 0;
+  }
+  footer .bottom_text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  footer .bottom_text .bottom {
+    margin: 0;
+    margin-top: 25px;
+    padding: 0;
+    text-align: center;
+    width: 90%;
+  }
+  footer h5 {
+    margin: 0;
+    margin-top: 30px;
+    text-align: center;
+    padding: 0;
+  }
+  footer .holder {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  footer .holder .content {
+    margin: 0;
+    padding: 0;
+  }
+  footer .holder .content .info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  footer .holder .content .info .top {
+    margin-top: 25px;
+  }
+  footer .holder .content .line {
+    display: none;
+  }
+  footer .holder .content .menu {
+    margin-top: 35px;
+  }
+  footer .holder .content .menu a {
+    text-align: center;
+  }
+  .properties .content .caledon .img_background a {
+    padding: 2.5px 12px 2.5px 12px;
+  }
+  .properties .content .etobicoke .img_background a {
+    padding: 2.5px 12px 2.5px 12px;
+  }
+  .properties .content .mississauga .img_background a {
+    padding: 2.5px 12px 2.5px 12px;
+  }
+  .properties .content .mississauga_transparent .img_background a {
+    padding: 2.5px 12px 2.5px 12px;
+  }
+  .properties .content .toronto .img_background a {
+    padding: 2.5px 12px 2.5px 12px;
+  }
+  .properties .content .toronto_transparent .img_background a {
+    padding: 2.5px 12px 2.5px 12px;
+  }
+  .tina .right .bottom {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .tina .right .mail_address {
+    display: none;
+  }
+  .tina .right .right_text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .tina .right .right_text .text {
+    margin-left: 0;
+  }
+  .tina .right .right_text .text h4 {
+    text-align: center;
+  }
+  .tina .right .right_text .text h5 {
+    text-align: center;
+  }
+  .tina .right .right_text .text p {
+    text-align: center;
+  }
+  .worth .content .button {
+    margin: 0;
+    margin-top: 25px;
+  }
+  .worth .content input {
+    display: block;
+  }
+  .worth .content .type {
+    width: 260px;
+  }
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+  .contact .content form .form_field {
+    display: block;
+  }
+  .contact .content form .form_field .field .email {
+    display: block;
+  }
+  .contact .content form .form_field .field .name {
+    display: block;
+  }
+  .contact .content form .form_fieldMessage {
+    border: 15px solid transparent;
+  }
+  .contact .content form .form_fieldMessage textarea {
+    width: 325px;
+  }
+  .contact .content form .mail {
+    display: block;
+    margin: 0;
+    margin-left: 15px;
+    margin-top: 20px;
+    padding: 0;
+  }
+  .contact .content form p {
+    display: inline;
+    margin-left: 10px;
+  }
+  .contact .content form .phone {
+    display: block;
+  }
+  .contact .content form .social {
+    display: inline;
+    margin-left: 15px;
+  }
+  .contact .content form .social img {
+    margin-right: 7px;
+    margin-top: 20px;
+  }
+  .contact .content form .submit {
+    margin-left: 15px;
+    margin-top: 15px;
+    padding: 10px 40px 10px 40px;
+  }
+  .contact .content h5 {
+    color: #ffffff;
+    font-family: montserrat;
+    margin: 0;
+    margin-left: 15px;
+    padding: 0;
+  }
+  footer .bottom_text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  footer .bottom_text .bottom {
+    margin: 0;
+    margin-top: 25px;
+    padding: 0;
+    text-align: center;
+    width: 90%;
+  }
+  footer h5 {
+    margin: 0;
+    margin-top: 30px;
+    text-align: center;
+    padding: 0;
+  }
+  footer .holder {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  footer .holder .content {
+    margin: 0;
+    padding: 0;
+  }
+  footer .holder .content .info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  footer .holder .content .info .top {
+    margin-top: 25px;
+  }
+  footer .holder .content .line {
+    display: none;
+  }
+  footer .holder .content .menu {
+    margin-top: 35px;
+  }
+  footer .holder .content .menu a {
+    text-align: center;
+  }
+  .tina .right .bottom {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .tina .right .right_text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .tina .right .right_text .text {
+    margin-left: 0;
+  }
+  .tina .right .right_text .text h4 {
+    text-align: center;
+  }
+  .tina .right .right_text .text h5 {
+    text-align: center;
+  }
+  .tina .right .right_text .text p {
+    text-align: center;
+  }
+  .worth .content .button {
+    margin: 0;
+    margin-top: 25px;
+  }
+  .worth .content input {
+    display: block;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+  footer .bottom_text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  footer .bottom_text .bottom {
+    margin: 0;
+    margin-top: 25px;
+    padding: 0;
+    text-align: center;
+    width: 90%;
+  }
+  footer h5 {
+    margin: 0;
+    margin-top: 30px;
+    text-align: center;
+    padding: 0;
+  }
+  footer .holder {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  footer .holder .content {
+    margin: 0;
+    padding: 0;
+  }
+  footer .holder .content .info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  footer .holder .content .info .top {
+    margin-top: 25px;
+  }
+  footer .holder .content .line {
+    display: none;
+  }
+  footer .holder .content .menu {
+    margin-top: 35px;
+  }
+  footer .holder .content .menu a {
+    text-align: center;
+  }
+  .tina .right .bottom {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .tina .right .right_text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .tina .right .right_text .text {
+    margin-left: 0;
+  }
+  .tina .right .right_text .text h4 {
+    text-align: center;
+  }
+  .tina .right .right_text .text h5 {
+    text-align: center;
+  }
+  .tina .right .right_text .text p {
+    text-align: center;
+  }
+}
+
+@media (min-width: 993px) and (max-width: 1200px) {
+  footer .bottom_text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  footer .bottom_text .bottom {
+    margin: 0;
+    margin-top: 25px;
+    padding: 0;
+    text-align: center;
+    width: 90%;
+  }
+  footer h5 {
+    margin: 0;
+    margin-top: 30px;
+    text-align: center;
+    padding: 0;
+  }
+  footer .holder {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  footer .holder .content {
+    margin: 0;
+    padding: 0;
+  }
+  footer .holder .content .info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  footer .holder .content .info .top {
+    margin-top: 25px;
+  }
+  footer .holder .content .line {
+    display: none;
+  }
+  footer .holder .content .menu {
+    margin-top: 35px;
+  }
+  footer .holder .content .menu a {
+    text-align: center;
+  }
+  .tina .right .bottom {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .tina .right .right_text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .tina .right .right_text .text {
+    margin-left: 0;
+  }
+  .tina .right .right_text .text h4 {
+    text-align: center;
+  }
+  .tina .right .right_text .text h5 {
+    text-align: center;
+  }
+  .tina .right .right_text .text p {
+    text-align: center;
+  }
+}
+
+@media (min-width: 1601px) and (max-width: 2000px) {
+  .contact {
+    margin-top: 37px;
+  }
+  .contact .content {
+    margin-bottom: 37px;
+    margin-top: 37px;
+  }
+  .contact .content form {
+    margin-top: 31px;
+  }
+  .contact .content form .form_field {
+    border: 18px solid transparent;
+  }
+  .contact .content form .form_field .field {
+    font-size: 20px;
+    height: 50px;
+    width: 406px;
+  }
+  .contact .content form .form_fieldMessage {
+    border: 18px solid transparent;
+  }
+  .contact .content form .form_fieldMessage textarea {
+    font-size: 20px;
+    height: 250px;
+    width: 855px;
+  }
+  .contact .content form .mail {
+    margin-left: 37px;
+  }
+  .contact .content form .mail img {
+    height: 31px;
+    width: 42px;
+  }
+  .contact .content form p {
+    font-size: 20px;
+    margin-left: 12.5px;
+  }
+  .contact .content form .phone {
+    margin-left: 18px;
+  }
+  .contact .content form .phone img {
+    height: 31px;
+    width: 31px;
+  }
+  .contact .content form .social {
+    margin-left: 37px;
+  }
+  .contact .content form .social img {
+    height: 32px;
+    margin-right: 8.7px;
+    width: 33px;
+  }
+  .contact .content form .submit {
+    border: 1.25px solid #ffffff;
+    font-size: 20px;
+    margin-left: 18px;
+    margin-top: 18px;
+    padding: 12.5px 50px 12.5px 50px;
+  }
+  .contact .content h5 {
+    font-size: 25px;
+    margin-left: 18px;
+  }
+  footer {
+    -webkit-box-shadow: 10px 10px 7.5px -7.5px rgba(0, 0, 0, 0.35);
+            box-shadow: 10px 10px 7.5px -7.5px rgba(0, 0, 0, 0.35);
+    margin-bottom: 37px;
+    margin-top: 37px;
+  }
+  footer .bottom {
+    font-size: 20px;
+    margin-bottom: 37px;
+    margin-left: 125px;
+    margin-top: 31px;
+  }
+  footer .content {
+    margin-left: 125px;
+    margin-top: 37px;
+    width: 1000px;
+  }
+  footer .content h5 {
+    font-size: 25px;
+  }
+  footer .content .info {
+    margin-top: 25px;
+  }
+  footer .content .info .phone {
+    height: 31px;
+    width: 31px;
+  }
+  footer .content .line {
+    height: 2.5px;
+    width: 1000px;
+  }
+  footer .content .mail_info {
+    margin-top: 18px;
+  }
+  footer .content .mail_info .email {
+    margin-left: 12.5px;
+  }
+  footer .content .mail_info .mail {
+    height: 23px;
+    width: 31px;
+  }
+  footer .content .menu {
+    margin-top: 25px;
+  }
+  footer .content .menu a {
+    font-size: 20px;
+  }
+  footer .content .number {
+    margin-left: 12.5px;
+  }
+  footer .content p {
+    font-size: 20px;
+  }
+  .properties {
+    padding-bottom: 43px;
+  }
+  .properties .content {
+    margin-top: 18px;
+  }
+  .properties .content .caledon {
+    border: 18px solid #f2f2f2;
+  }
+  .properties .content .caledon .img_background a {
+    border: 1.25px solid #ffffff;
+    font-size: 20px;
+    padding: 12.5px 62px 12.5px 62px;
+  }
+  .properties .content .caledon .img_background a:hover {
+    border: 1.25px solid #000000;
+  }
+  .properties .content .etobicoke {
+    border: 18px solid #f2f2f2;
+  }
+  .properties .content .etobicoke .img_background a {
+    border: 1.25px solid #ffffff;
+    font-size: 20px;
+    padding: 12.5px 62px 12.5px 62px;
+  }
+  .properties .content .mississauga {
+    border: 18px solid #f2f2f2;
+  }
+  .properties .content .mississauga .img_background a {
+    border: 1.25px solid #ffffff;
+    font-size: 20px;
+    padding: 12.5px 62px 12.5px 62px;
+  }
+  .properties .content .mississauga_transparent {
+    border: 18px solid #f2f2f2;
+  }
+  .properties .content .mississauga_transparent .img_background a {
+    border: 1.25px solid #ffffff;
+    font-size: 20px;
+    padding: 12.5px 62px 12.5px 62px;
+  }
+  .properties .content .mississauga_transparent .img_background a:hover {
+    border: 1.25px solid #000000;
+  }
+  .properties .content .toronto {
+    border: 18px solid #f2f2f2;
+  }
+  .properties .content .toronto .img_background a {
+    border: 1.25px solid #ffffff;
+    font-size: 20px;
+    padding: 12.5px 62px 12.5px 62px;
+  }
+  .properties .content .toronto_transparent {
+    border: 18px solid #f2f2f2;
+  }
+  .properties .content .toronto_transparent .img_background a {
+    border: 1.25px solid #ffffff;
+    font-size: 20px;
+    padding: 12.5px 62px 12.5px 62px;
+  }
+  .properties .content .toronto_transparent .img_background a:hover {
+    border: 1.25px solid #000000;
+  }
+  .properties .heading {
+    margin-top: 43px;
+  }
+  .properties .heading h5 {
+    font-size: 25px;
+    margin-left: 18px;
+  }
+  .testimonials {
+    margin-top: 31px;
+  }
+  .testimonials .content {
+    margin-bottom: 125px;
+    margin-top: 125px;
+  }
+  .testimonials .content .heading {
+    height: 210px;
+    width: 250px;
+  }
+  .testimonials .content .heading h5 {
+    font-size: 25px;
+    top: 143px;
+  }
+  .testimonials .content p {
+    font-size: 20px;
+    margin-top: 43px;
+  }
+  .testimonials .content .slide {
+    height: 375px;
+  }
+  .testimonials .content .slide .carousel-inner {
+    margin-top: 50px;
+  }
+  .tina {
+    margin-top: 31px;
+  }
+  .tina .right {
+    -webkit-box-shadow: 10px 10px 7.5px -7.5px rgba(0, 0, 0, 0.35);
+            box-shadow: 10px 10px 7.5px -7.5px rgba(0, 0, 0, 0.35);
+  }
+  .tina .right .button {
+    margin-bottom: 50px;
+    margin-top: 50px;
+  }
+  .tina .right .button a {
+    border: 2.5px solid #81838a;
+    font-size: 20px;
+    padding: 12.5px 50px 12.5px 50px;
+  }
+  .tina .right h4 {
+    font-size: 30px;
+  }
+  .tina .right h5 {
+    font-size: 25px;
+  }
+  .tina .right .mail_address {
+    margin-top: 18px;
+  }
+  .tina .right .mail_address img {
+    height: 22px;
+    width: 31px;
+  }
+  .tina .right .mail_address .mail {
+    margin-left: 12.5px;
+  }
+  .tina .right p {
+    font-size: 20px;
+  }
+  .tina .right .phone_number {
+    margin-top: 31px;
+  }
+  .tina .right .phone_number img {
+    height: 31px;
+    width: 31px;
+  }
+  .tina .right .phone_number .number {
+    margin-left: 12.5px;
+  }
+  .tina .right .text {
+    margin-left: 93px;
+    margin-top: 37px;
+  }
+  .worth .content {
+    padding: 125px;
+  }
+  .worth .content .button {
+    border: 2.5px solid #ffffff;
+    font-size: 20px;
+    margin-left: 6.25px;
+  }
+  .worth .content p {
+    font-size: 20px;
+  }
+  .worth .content .type {
+    font-size: 20px;
+    width: 562px;
+  }
+}
+
+@media (min-width: 2001px) and (max-width: 2500px) {
+  .contact {
+    margin-top: 46px;
+  }
+  .contact .content {
+    margin-bottom: 46px;
+    margin-top: 46px;
+  }
+  .contact .content form {
+    margin-top: 38px;
+  }
+  .contact .content form .form_field {
+    border: 22px solid transparent;
+  }
+  .contact .content form .form_field .field {
+    font-size: 25px;
+    height: 62px;
+    width: 507px;
+  }
+  .contact .content form .form_fieldMessage {
+    border: 22px solid transparent;
+  }
+  .contact .content form .form_fieldMessage textarea {
+    font-size: 25px;
+    height: 312px;
+    width: 1093px;
+  }
+  .contact .content form .mail {
+    margin-left: 46px;
+  }
+  .contact .content form .mail img {
+    height: 38px;
+    width: 52px;
+  }
+  .contact .content form p {
+    font-size: 25px;
+    margin-left: 15.6px;
+  }
+  .contact .content form .phone {
+    margin-left: 22px;
+  }
+  .contact .content form .phone img {
+    height: 38px;
+    width: 38px;
+  }
+  .contact .content form .social {
+    margin-left: 46px;
+  }
+  .contact .content form .social img {
+    height: 40px;
+    margin-right: 10.8px;
+    width: 41px;
+  }
+  .contact .content form .submit {
+    border: 1.56px solid #ffffff;
+    font-size: 25px;
+    margin-left: 22px;
+    margin-top: 22px;
+    padding: 15.6px 62px 15.6px 62px;
+  }
+  .contact .content h5 {
+    font-size: 31px;
+    margin-left: 22px;
+  }
+  footer {
+    -webkit-box-shadow: 12.5px 12.5px 9.3px -9.3px rgba(0, 0, 0, 0.35);
+            box-shadow: 12.5px 12.5px 9.3px -9.3px rgba(0, 0, 0, 0.35);
+    margin-bottom: 46px;
+    margin-top: 46px;
+  }
+  footer .bottom {
+    font-size: 25px;
+    margin-bottom: 46px;
+    margin-left: 156px;
+    margin-top: 38px;
+  }
+  footer .content {
+    margin-left: 156px;
+    margin-top: 46px;
+    width: 1250px;
+  }
+  footer .content h5 {
+    font-size: 31px;
+  }
+  footer .content .info {
+    margin-top: 31px;
+  }
+  footer .content .info .phone {
+    height: 38px;
+    width: 38px;
+  }
+  footer .content .line {
+    height: 3.1px;
+    width: 1250px;
+  }
+  footer .content .mail_info {
+    margin-top: 22px;
+  }
+  footer .content .mail_info .email {
+    margin-left: 15.6px;
+  }
+  footer .content .mail_info .mail {
+    height: 28px;
+    width: 38px;
+  }
+  footer .content .menu {
+    margin-top: 31px;
+  }
+  footer .content .menu a {
+    font-size: 25px;
+  }
+  footer .content .number {
+    margin-left: 15.6px;
+  }
+  footer .content p {
+    font-size: 25px;
+  }
+  .properties {
+    padding-bottom: 53px;
+  }
+  .properties .content {
+    margin-top: 22px;
+  }
+  .properties .content .caledon {
+    border: 22px solid #f2f2f2;
+  }
+  .properties .content .caledon .img_background a {
+    border: 1.56px solid #ffffff;
+    font-size: 25px;
+    padding: 15.6px 77px 15.6px 77px;
+  }
+  .properties .content .caledon .img_background a:hover {
+    border: 1.56px solid #000000;
+  }
+  .properties .content .etobicoke {
+    border: 22px solid #f2f2f2;
+  }
+  .properties .content .etobicoke .img_background a {
+    border: 1.56px solid #ffffff;
+    font-size: 25px;
+    padding: 15.6px 77px 15.6px 77px;
+  }
+  .properties .content .mississauga {
+    border: 22px solid #f2f2f2;
+  }
+  .properties .content .mississauga .img_background a {
+    border: 1.56px solid #ffffff;
+    font-size: 25px;
+    padding: 15.6px 77px 15.6px 77px;
+  }
+  .properties .content .mississauga_transparent {
+    border: 22px solid #f2f2f2;
+  }
+  .properties .content .mississauga_transparent .img_background a {
+    border: 1.56px solid #ffffff;
+    font-size: 25px;
+    padding: 15.6px 77px 15.6px 77px;
+  }
+  .properties .content .mississauga_transparent .img_background a:hover {
+    border: 1.56px solid #000000;
+  }
+  .properties .content .toronto {
+    border: 22px solid #f2f2f2;
+  }
+  .properties .content .toronto .img_background a {
+    border: 1.56px solid #ffffff;
+    font-size: 25px;
+    padding: 15.6px 77px 15.6px 77px;
+  }
+  .properties .content .toronto_transparent {
+    border: 22px solid #f2f2f2;
+  }
+  .properties .content .toronto_transparent .img_background a {
+    border: 1.56px solid #ffffff;
+    font-size: 25px;
+    padding: 15.6px 77px 15.6px 77px;
+  }
+  .properties .content .toronto_transparent .img_background a:hover {
+    border: 1.56px solid #000000;
+  }
+  .properties .heading {
+    margin-top: 53px;
+  }
+  .properties .heading h5 {
+    font-size: 31px;
+    margin-left: 22px;
+  }
+  .testimonials {
+    margin-top: 38px;
+  }
+  .testimonials .content {
+    margin-bottom: 156px;
+    margin-top: 156px;
+  }
+  .testimonials .content .heading {
+    height: 267px;
+    width: 312px;
+  }
+  .testimonials .content .heading h5 {
+    font-size: 31px;
+    top: 178px;
+  }
+  .testimonials .content p {
+    font-size: 25px;
+    margin-top: 53px;
+  }
+  .testimonials .content .slide {
+    height: 468px;
+  }
+  .testimonials .content .slide .carousel-inner {
+    margin-top: 62px;
+  }
+  .tina {
+    margin-top: 38px;
+  }
+  .tina .right {
+    -webkit-box-shadow: 12.5px 12.5px 9.3px -9.3px rgba(0, 0, 0, 0.35);
+            box-shadow: 12.5px 12.5px 9.3px -9.3px rgba(0, 0, 0, 0.35);
+  }
+  .tina .right .button {
+    margin-bottom: 62px;
+    margin-top: 62px;
+  }
+  .tina .right .button a {
+    border: 3.1px solid #81838a;
+    font-size: 25px;
+    padding: 15.6px 62px 15.6px 62px;
+  }
+  .tina .right h4 {
+    font-size: 37px;
+  }
+  .tina .right h5 {
+    font-size: 31px;
+  }
+  .tina .right .mail_address {
+    margin-top: 22px;
+  }
+  .tina .right .mail_address img {
+    height: 27px;
+    width: 38px;
+  }
+  .tina .right .mail_address .mail {
+    margin-left: 15.6px;
+  }
+  .tina .right p {
+    font-size: 25px;
+  }
+  .tina .right .phone_number {
+    margin-top: 38px;
+  }
+  .tina .right .phone_number img {
+    height: 38px;
+    width: 38px;
+  }
+  .tina .right .phone_number .number {
+    margin-left: 15.6px;
+  }
+  .tina .right .text {
+    margin-left: 116px;
+    margin-top: 46px;
+  }
+  .worth .content {
+    padding: 156px;
+  }
+  .worth .content .button {
+    border: 3.1px solid #ffffff;
+    font-size: 25px;
+    margin-left: 7.7px;
+  }
+  .worth .content p {
+    font-size: 25px;
+  }
+  .worth .content .type {
+    font-size: 25px;
+    width: 702px;
+  }
+}
+
+@media (min-width: 2501px) and (max-width: 3125px) {
+  .contact {
+    margin-top: 57px;
+  }
+  .contact .content {
+    margin-bottom: 57px;
+    margin-top: 57px;
+  }
+  .contact .content form {
+    margin-top: 47px;
+  }
+  .contact .content form .form_field {
+    border: 27px solid transparent;
+  }
+  .contact .content form .form_field .field {
+    font-size: 31px;
+    height: 77px;
+    width: 633px;
+  }
+  .contact .content form .form_fieldMessage {
+    border: 27px solid transparent;
+  }
+  .contact .content form .form_fieldMessage textarea {
+    font-size: 31px;
+    height: 390px;
+    width: 1366px;
+  }
+  .contact .content form .mail {
+    margin-left: 57px;
+  }
+  .contact .content form .mail img {
+    height: 47px;
+    width: 65px;
+  }
+  .contact .content form p {
+    font-size: 31px;
+    margin-left: 19.5px;
+  }
+  .contact .content form .phone {
+    margin-left: 27px;
+  }
+  .contact .content form .phone img {
+    height: 47px;
+    width: 47px;
+  }
+  .contact .content form .social {
+    margin-left: 57px;
+  }
+  .contact .content form .social img {
+    height: 50px;
+    margin-right: 13.5px;
+    width: 51px;
+  }
+  .contact .content form .submit {
+    border: 1.95px solid #ffffff;
+    font-size: 31px;
+    margin-left: 27px;
+    margin-top: 27px;
+    padding: 19.5px 77px 19.5px 77px;
+  }
+  .contact .content h5 {
+    font-size: 38px;
+    margin-left: 27px;
+  }
+  footer {
+    -webkit-box-shadow: 15.6px 15.6px 11.6px -11.6px rgba(0, 0, 0, 0.35);
+            box-shadow: 15.6px 15.6px 11.6px -11.6px rgba(0, 0, 0, 0.35);
+    margin-bottom: 57px;
+    margin-top: 57px;
+  }
+  footer .bottom {
+    font-size: 31px;
+    margin-bottom: 57px;
+    margin-left: 195px;
+    margin-top: 47px;
+  }
+  footer .content {
+    margin-left: 195px;
+    margin-top: 57px;
+    width: 1560px;
+  }
+  footer .content h5 {
+    font-size: 38px;
+  }
+  footer .content .info {
+    margin-top: 38px;
+  }
+  footer .content .info .phone {
+    height: 47px;
+    width: 47px;
+  }
+  footer .content .line {
+    height: 3.8px;
+    width: 1560px;
+  }
+  footer .content .mail_info {
+    margin-top: 27px;
+  }
+  footer .content .mail_info .email {
+    margin-left: 19.5px;
+  }
+  footer .content .mail_info .mail {
+    height: 35px;
+    width: 47px;
+  }
+  footer .content .menu {
+    margin-top: 38px;
+  }
+  footer .content .menu a {
+    font-size: 31px;
+  }
+  footer .content .number {
+    margin-left: 19.5px;
+  }
+  footer .content p {
+    font-size: 31px;
+  }
+  .properties {
+    padding-bottom: 66px;
+  }
+  .properties .content {
+    margin-top: 27px;
+  }
+  .properties .content .caledon {
+    border: 27px solid #f2f2f2;
+  }
+  .properties .content .caledon .img_background a {
+    border: 1.95px solid #ffffff;
+    font-size: 31px;
+    padding: 19.5px 96px 19.5px 96px;
+  }
+  .properties .content .caledon .img_background a:hover {
+    border: 1.95px solid #000000;
+  }
+  .properties .content .etobicoke {
+    border: 27px solid #f2f2f2;
+  }
+  .properties .content .etobicoke .img_background a {
+    border: 1.95px solid #ffffff;
+    font-size: 31px;
+    padding: 19.5px 96px 19.5px 96px;
+  }
+  .properties .content .mississauga {
+    border: 27px solid #f2f2f2;
+  }
+  .properties .content .mississauga .img_background a {
+    border: 1.95px solid #ffffff;
+    font-size: 31px;
+    padding: 19.5px 96px 19.5px 96px;
+  }
+  .properties .content .mississauga_transparent {
+    border: 27px solid #f2f2f2;
+  }
+  .properties .content .mississauga_transparent .img_background a {
+    border: 1.95px solid #ffffff;
+    font-size: 31px;
+    padding: 19.5px 96px 19.5px 96px;
+  }
+  .properties .content .mississauga_transparent .img_background a:hover {
+    border: 1.95px solid #000000;
+  }
+  .properties .content .toronto {
+    border: 27px solid #f2f2f2;
+  }
+  .properties .content .toronto .img_background a {
+    border: 1.95px solid #ffffff;
+    font-size: 31px;
+    padding: 19.5px 96px 19.5px 96px;
+  }
+  .properties .content .toronto_transparent {
+    border: 27px solid #f2f2f2;
+  }
+  .properties .content .toronto_transparent .img_background a {
+    border: 1.95px solid #ffffff;
+    font-size: 31px;
+    padding: 19.5px 96px 19.5px 96px;
+  }
+  .properties .content .toronto_transparent .img_background a:hover {
+    border: 1.95px solid #000000;
+  }
+  .properties .heading {
+    margin-top: 66px;
+  }
+  .properties .heading h5 {
+    font-size: 38px;
+    margin-left: 27px;
+  }
+  .testimonials {
+    margin-top: 47px;
+  }
+  .testimonials .content {
+    margin-bottom: 195px;
+    margin-top: 195px;
+  }
+  .testimonials .content .heading {
+    height: 333px;
+    width: 390px;
+  }
+  .testimonials .content .heading h5 {
+    font-size: 38px;
+    top: 222px;
+  }
+  .testimonials .content p {
+    font-size: 31px;
+    margin-top: 66px;
+  }
+  .testimonials .content .slide {
+    height: 585px;
+  }
+  .testimonials .content .slide .carousel-inner {
+    margin-top: 77px;
+  }
+  .tina {
+    margin-top: 47px;
+  }
+  .tina .right {
+    -webkit-box-shadow: 15.6px 15.6px 11.6px -11.6px rgba(0, 0, 0, 0.35);
+            box-shadow: 15.6px 15.6px 11.6px -11.6px rgba(0, 0, 0, 0.35);
+  }
+  .tina .right .button {
+    margin-bottom: 77px;
+    margin-top: 77px;
+  }
+  .tina .right .button a {
+    border: 3.8px solid #81838a;
+    font-size: 31px;
+    padding: 19.5px 77px 19.5px 77px;
+  }
+  .tina .right h4 {
+    font-size: 46px;
+  }
+  .tina .right h5 {
+    font-size: 38px;
+  }
+  .tina .right .mail_address {
+    margin-top: 27px;
+  }
+  .tina .right .mail_address img {
+    height: 33px;
+    width: 47px;
+  }
+  .tina .right .mail_address .mail {
+    margin-left: 19.5px;
+  }
+  .tina .right p {
+    font-size: 31px;
+  }
+  .tina .right .phone_number {
+    margin-top: 47px;
+  }
+  .tina .right .phone_number img {
+    height: 47px;
+    width: 47px;
+  }
+  .tina .right .phone_number .number {
+    margin-left: 19.5px;
+  }
+  .tina .right .text {
+    margin-left: 145px;
+    margin-top: 57px;
+  }
+  .worth .content {
+    padding: 195px;
+  }
+  .worth .content .button {
+    border: 3.8px solid #ffffff;
+    font-size: 31px;
+    margin-left: 9.6px;
+  }
+  .worth .content p {
+    font-size: 31px;
+  }
+  .worth .content .type {
+    font-size: 31px;
+    width: 877px;
+  }
+}
+
+@media (min-width: 3126px) {
+  .contact {
+    margin-top: 71px;
+  }
+  .contact .content {
+    margin-bottom: 71px;
+    margin-top: 71px;
+  }
+  .contact .content form {
+    margin-top: 58px;
+  }
+  .contact .content form .form_field {
+    border: 33px solid transparent;
+  }
+  .contact .content form .form_field .field {
+    font-size: 38px;
+    height: 96px;
+    width: 791px;
+  }
+  .contact .content form .form_fieldMessage {
+    border: 33px solid transparent;
+  }
+  .contact .content form .form_fieldMessage textarea {
+    font-size: 38px;
+    height: 487px;
+    width: 1707px;
+  }
+  .contact .content form .mail {
+    margin-left: 71px;
+  }
+  .contact .content form .mail img {
+    height: 58px;
+    width: 81px;
+  }
+  .contact .content form p {
+    font-size: 38px;
+    margin-left: 24.3px;
+  }
+  .contact .content form .phone {
+    margin-left: 33px;
+  }
+  .contact .content form .phone img {
+    height: 58px;
+    width: 58px;
+  }
+  .contact .content form .social {
+    margin-left: 71px;
+  }
+  .contact .content form .social img {
+    height: 62px;
+    margin-right: 16.8px;
+    width: 63px;
+  }
+  .contact .content form .submit {
+    border: 2.43px solid #ffffff;
+    font-size: 38px;
+    margin-left: 33px;
+    margin-top: 33px;
+    padding: 24.3px 96px 24.3px 96px;
+  }
+  .contact .content h5 {
+    font-size: 47px;
+    margin-left: 33px;
+  }
+  footer {
+    -webkit-box-shadow: 19.5px 19.5px 14.5px -14.5px rgba(0, 0, 0, 0.35);
+            box-shadow: 19.5px 19.5px 14.5px -14.5px rgba(0, 0, 0, 0.35);
+    margin-bottom: 71px;
+    margin-top: 71px;
+  }
+  footer .bottom {
+    font-size: 38px;
+    margin-bottom: 71px;
+    margin-left: 243px;
+    margin-top: 58px;
+  }
+  footer .content {
+    margin-left: 243px;
+    margin-top: 71px;
+    width: 1950px;
+  }
+  footer .content h5 {
+    font-size: 47px;
+  }
+  footer .content .info {
+    margin-top: 47px;
+  }
+  footer .content .info .phone {
+    height: 58px;
+    width: 58px;
+  }
+  footer .content .line {
+    height: 4.7px;
+    width: 1950px;
+  }
+  footer .content .mail_info {
+    margin-top: 33px;
+  }
+  footer .content .mail_info .email {
+    margin-left: 24.3px;
+  }
+  footer .content .mail_info .mail {
+    height: 43px;
+    width: 58px;
+  }
+  footer .content .menu {
+    margin-top: 47px;
+  }
+  footer .content .menu a {
+    font-size: 38px;
+  }
+  footer .content .number {
+    margin-left: 24.3px;
+  }
+  footer .content p {
+    font-size: 38px;
+  }
+  .properties {
+    padding-bottom: 82px;
+  }
+  .properties .content {
+    margin-top: 33px;
+  }
+  .properties .content .caledon {
+    border: 33px solid #f2f2f2;
+  }
+  .properties .content .caledon .img_background a {
+    border: 2.43px solid #ffffff;
+    font-size: 38px;
+    padding: 24.3px 120px 24.3px 120px;
+  }
+  .properties .content .caledon .img_background a:hover {
+    border: 2.43px solid #000000;
+  }
+  .properties .content .etobicoke {
+    border: 33px solid #f2f2f2;
+  }
+  .properties .content .etobicoke .img_background a {
+    border: 2.43px solid #ffffff;
+    font-size: 38px;
+    padding: 24.3px 120px 24.3px 120px;
+  }
+  .properties .content .mississauga {
+    border: 33px solid #f2f2f2;
+  }
+  .properties .content .mississauga .img_background a {
+    border: 2.43px solid #ffffff;
+    font-size: 38px;
+    padding: 24.3px 120px 24.3px 120px;
+  }
+  .properties .content .mississauga_transparent {
+    border: 33px solid #f2f2f2;
+  }
+  .properties .content .mississauga_transparent .img_background a {
+    border: 2.43px solid #ffffff;
+    font-size: 38px;
+    padding: 24.3px 120px 24.3px 120px;
+  }
+  .properties .content .mississauga_transparent .img_background a:hover {
+    border: 2.43px solid #000000;
+  }
+  .properties .content .toronto {
+    border: 33px solid #f2f2f2;
+  }
+  .properties .content .toronto .img_background a {
+    border: 2.43px solid #ffffff;
+    font-size: 38px;
+    padding: 24.3px 120px 24.3px 120px;
+  }
+  .properties .content .toronto_transparent {
+    border: 33px solid #f2f2f2;
+  }
+  .properties .content .toronto_transparent .img_background a {
+    border: 2.43px solid #ffffff;
+    font-size: 38px;
+    padding: 24.3px 120px 24.3px 120px;
+  }
+  .properties .content .toronto_transparent .img_background a:hover {
+    border: 2.43px solid #000000;
+  }
+  .properties .heading {
+    margin-top: 82px;
+  }
+  .properties .heading h5 {
+    font-size: 47px;
+    margin-left: 33px;
+  }
+  .testimonials {
+    margin-top: 58px;
+  }
+  .testimonials .content {
+    margin-bottom: 243px;
+    margin-top: 243px;
+  }
+  .testimonials .content .heading {
+    height: 416px;
+    width: 487px;
+  }
+  .testimonials .content .heading h5 {
+    font-size: 47px;
+    top: 277px;
+  }
+  .testimonials .content p {
+    font-size: 38px;
+    margin-top: 82px;
+  }
+  .testimonials .content .slide {
+    height: 731px;
+  }
+  .testimonials .content .slide .carousel-inner {
+    margin-top: 96px;
+  }
+  .tina {
+    margin-top: 58px;
+  }
+  .tina .right {
+    -webkit-box-shadow: 19.5px 19.5px 14.5px -14.5px rgba(0, 0, 0, 0.35);
+            box-shadow: 19.5px 19.5px 14.5px -14.5px rgba(0, 0, 0, 0.35);
+  }
+  .tina .right .button {
+    margin-bottom: 96px;
+    margin-top: 96px;
+  }
+  .tina .right .button a {
+    border: 4.7px solid #81838a;
+    font-size: 38px;
+    padding: 24.3px 96px 24.3px 96px;
+  }
+  .tina .right h4 {
+    font-size: 57px;
+  }
+  .tina .right h5 {
+    font-size: 47px;
+  }
+  .tina .right .mail_address {
+    margin-top: 33px;
+  }
+  .tina .right .mail_address img {
+    height: 41px;
+    width: 58px;
+  }
+  .tina .right .mail_address .mail {
+    margin-left: 24.3px;
+  }
+  .tina .right p {
+    font-size: 38px;
+  }
+  .tina .right .phone_number {
+    margin-top: 58px;
+  }
+  .tina .right .phone_number img {
+    height: 58px;
+    width: 58px;
+  }
+  .tina .right .phone_number .number {
+    margin-left: 24.3px;
+  }
+  .tina .right .text {
+    margin-left: 181px;
+    margin-top: 71px;
+  }
+  .worth .content {
+    padding: 243px;
+  }
+  .worth .content .button {
+    border: 4.7px solid #ffffff;
+    font-size: 38px;
+    margin-left: 12px;
+  }
+  .worth .content p {
+    font-size: 38px;
+  }
+  .worth .content .type {
+    font-size: 38px;
+    width: 1096px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

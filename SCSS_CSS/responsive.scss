@@ -1,0 +1,74 @@
+/*
+
+
+*****************
+TABLE OF CONTENTS 
+*****************
+
+1. Variables 
+2. Mixins 
+3. Devices Screen, Max Height, 400px
+4. Devices Screen, Min Width, 401px, Max Width, 599px
+5. Devices Screen, Min Width, 600px, Max Width, 700px
+6. Devices Screen, Max Width, 576px
+7. Devices Screen, Min Width, 577px, Max Width, 768px
+8. Devices Screen, Min Width, 769px, Max Width, 992px
+9. Devices Screen, Min Width, 993px, Max Width, 1199px
+10. Devices Screen, Min Width, 1200px, Max Width, 1600px
+11. Devices Screen, Min Width, 1601px, Max Width, 2000px
+12. Devices Screen, Min Width, 2001px, Max Width, 2500px
+13. Devices Screen, Min Width, 2501px, Max Width, 3125px
+14. Devices Screen, Min Width, 3126px
+
+
+ */
+
+
+/*  ***** Variables *****  */
+$blue:#37ABBB;
+$dark:#000000;
+$darkgrey:#263d40;
+$grey:#DCEBEA;
+$light:#ffffff;
+$lightblue:rgba(183, 250, 242, 0.5);
+$lightdark:rgba(0,0,0,0.75);
+$middledark:rgba(0,0,0,0.95);
+
+
+/*  ***** Mixins *****  */
+@mixin h1_2000 {
+    font-size:56px;
+}
+@mixin h1_2500 {
+    font-size:70px;
+}
+@mixin h1_3125 {
+    font-size:87px;
+}
+@mixin h1_3850 {
+    font-size:108px;
+}
+@mixin h2_2000 {
+    font-size:43px;
+}
+@mixin h2_2500 {
+    font-size:53px;
+}
+@mixin h2_3125 {
+    font-size:66px;
+}
+@mixin h2_3850 {
+    font-size:82px;
+}
+@mixin h3_2000 {
+    font-size:38px;
+}
+@mixin h3_2500 {
+    font-size:47px;
+}
+@mixin h3_3125 {
+    font-size:58px;
+}
+@mixin h3_3850 {
+    font-size:72px;
+}

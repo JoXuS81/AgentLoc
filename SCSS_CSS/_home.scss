@@ -1,0 +1,966 @@
+/*
+
+
+*****************
+Table OF CONTENTS 
+*****************
+
+1. Fonts
+2. Mixins 
+3. Variables
+4. Home 
+ 4.1 Name
+ 4.2 Frontend Developer
+ 4.3 Hamburger Menu
+ 4.4 Image
+ 4.5 Logo 
+ 4.6 Navbar
+
+*/
+
+
+/*  ***** HOME *****  */
+.home {
+    background:url("../Images/Home/Background.jpg");
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:cover;
+    box-shadow:inset 0 0 0 4000px $lightdark;
+    height:100vh;
+    margin:0;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    position:relative;
+    -webkit-background-size:cover;
+    width:98%;
+    z-index:1;
+    .info {
+        background:$grey;
+        position:relative;
+        z-index:2;
+        div {
+            div {
+                img {
+                    display:inline;
+                    margin-left:200px;
+                }
+                .mail {
+                    margin-bottom:15px;
+                    margin-left:85px;
+                    margin-top:15px;
+                }
+                ul {
+                    display:inline;
+                    margin:0;
+                    margin-right:200px;
+                    padding:0;
+                    li {
+                        display:inline;
+                        margin:10px;
+                        padding:0;
+                        a {
+                            margin:0;
+                            padding:0;
+                            &:hover {
+                                text-decoration:none;
+                            }
+                            img {
+                                margin:0;
+                                margin-bottom:15px;
+                                margin-top:15px;
+                                padding:0;
+                            }
+                        }
+                    }
+                }
+                p {
+                    display:inline-block;
+                    font-family:montserrat;
+                    margin-left:10px;
+                }
+            }
+        }
+    }
+    .logo {
+        margin-left:200px;
+        margin-top:50px;
+    }
+    .top {
+        position:relative;
+        width:100%;
+        z-index:2;
+        div {
+            div {
+                ul {
+                    display:inline;
+                    list-style-type:none;
+                    margin-right:200px;
+                    padding:0;
+                    li {
+                        display:inline;
+                        a {
+                            bottom:20px;
+                            color:$light;
+                            font-family:montserrat;
+                            font-weight:bold;
+                            margin:0 12px 0 12px;
+                            padding:0;
+                            position:relative;
+                        }
+                    }
+                }
+            }
+        }
+        .home_hamburger {
+            background:$middledark;
+            cursor:pointer;
+            display:flex;
+            flex-direction:column;
+            height:50px;
+            justify-content:space-around;
+            padding:10px;
+            position:fixed;
+            right:0;
+            top:0;
+            visibility:hidden;
+            width:55px;
+            z-index:21;
+        }
+    }
+    .play {
+        height:100%;
+        left:0;
+        position:absolute;
+        top:57.5px;
+        width:100%;
+        z-index:0;
+        img {
+            cursor:pointer;
+        }
+    }
+    .property_search {
+        height:50px;
+        position:relative;
+        z-index:2;
+        .fields {
+            form {
+                .enter {
+                    width:425px;
+                }
+                input {
+                    font-family:montserrat;
+                    margin-left:20px;
+                    padding:4px 4px 4px 4px;
+                    width:150px;
+                }
+                .submit {
+                    background:transparent;
+                    border:1px solid $light;
+                    color:$light;
+                    padding:4px 4px 4px 4px;
+                }
+            }
+        }
+    }
+    .search {
+        color:$light;
+        margin-top:425px;
+        position:relative;
+        z-index:2;
+    }
+}
+
+
+@media (max-height:475px) {
+    .home {
+        .play {
+            img {
+                display:none;
+            }
+        }
+    }
+}
+
+
+@media (max-width:576px) {
+    .home {
+        .info {
+            .mail {
+                display:none;
+            }
+            .mail_address {
+                display:none;
+            }
+            .phone {
+                margin:0;
+                margin-bottom:15px;
+                margin-top:15px;
+            }
+            .social {
+                margin:0;
+                ul {
+                    margin:0;
+                }
+            }
+        }
+        .top {
+            .logo {
+                margin-left:0;
+            }
+            .menu {
+                .mobile {
+                    background:$dark;
+                    height:100%;
+                    position:fixed;
+                    right:-300px;
+                    top:0;
+                    ul {
+                        li {
+                            a {
+                                display:block;
+                                margin-top:25px;
+                            }
+                        }
+                    }
+                }
+            }
+            .home_hamburger {
+                visibility:visible;
+                .home_line {
+                    background:$grey;
+                    height:3px;
+                    transition:all 0.8s;
+                    width:100%;
+                }
+            }
+        }
+        .search {
+            display:none;
+        }
+        .search_area {
+            .property_search {
+                display:none;
+            }
+        }
+    }
+}
+
+
+@media (min-width:577px) and (max-width:768px) {
+    .home {
+        .info {
+            .mail {
+                display:none;
+            }
+            .mail_address {
+                display:none;
+            }
+            .phone {
+                margin:0;
+                margin-bottom:15px;
+                margin-top:15px;
+            }
+            .social {
+                margin:0;
+                ul {
+                    margin:0;
+                }
+            }
+        }
+        .top {
+            .logo {
+                margin-left:0;
+            }
+            .menu {
+                .mobile {
+                    background:$dark;
+                    height:100%;
+                    position:fixed;
+                    right:-300px;
+                    top:0;
+                    ul {
+                        li {
+                            a {
+                                display:block;
+                                margin-top:25px;
+                            }
+                        }
+                    }
+                }
+            }
+            .home_hamburger {
+                visibility:visible;
+                .home_line {
+                    background:$grey;
+                    height:3px;
+                    transition:all 0.8s;
+                    width:100%;
+                }
+            }
+        }
+        .search {
+            display:none;
+        }
+        .search_area {
+            .property_search {
+                display:none;
+            }
+        }
+    }
+}
+
+
+@media (min-width:769px) and (max-width:992px) {
+    .home {
+        .info {
+            .mail {
+                display:none;
+            }
+            .mail_address {
+                display:none;
+            }
+            .phone {
+                margin:0;
+                margin-bottom:15px;
+                margin-top:15px;
+            }
+            .social {
+                margin:0;
+                ul {
+                    margin:0;
+                }
+            }
+        }
+        .top {
+            .logo {
+                margin-left:0;
+            }
+            .menu {
+                .mobile {
+                    background:$dark;
+                    height:100%;
+                    position:fixed;
+                    right:-300px;
+                    top:0;
+                    ul {
+                        li {
+                            a {
+                                display:block;
+                                margin-top:25px;
+                            }
+                        }
+                    }
+                }
+            }
+            .home_hamburger {
+                visibility:visible;
+                .home_line {
+                    background:$grey;
+                    height:3px;
+                    transition:all 0.8s;
+                    width:100%;
+                }
+            }
+        }
+        .search {
+            display:none;
+        }
+        .search_area {
+            .property_search {
+                display:none;
+            }
+        }
+    }
+}
+
+
+@media (min-width:993px) and (max-width:1200px) {
+    .home {
+        .info {
+            .mail {
+                display:none;
+            }
+            .mail_address {
+                display:none;
+            }
+            .phone {
+                margin:0;
+                margin-bottom:15px;
+                margin-top:15px;
+            }
+            .social {
+                margin:0;
+                ul {
+                    margin:0;
+                }
+            }
+        }
+        .top {
+            .logo {
+                margin-left:0;
+            }
+            .menu {
+                .mobile {
+                    background:$dark;
+                    height:100%;
+                    position:fixed;
+                    right:-300px;
+                    top:0;
+                    ul {
+                        li {
+                            a {
+                                display:block;
+                                margin-top:25px;
+                            }
+                        }
+                    }
+                }
+            }
+            .home_hamburger {
+                visibility:visible;
+                .home_line {
+                    background:$grey;
+                    height:3px;
+                    transition:all 0.8s;
+                    width:100%;
+                }
+            }
+        }
+        .search {
+            display:none;
+        }
+        .search_area {
+            .property_search {
+                display:none;
+            }
+        }
+    }
+}
+
+
+@media (min-width:1201px) and (max-width:1225px) {
+    .home {
+        .search {
+            display:none;
+        }
+        .search_area {
+            .property_search {
+                display:none;
+            }
+        }
+    }
+}
+
+
+@media (min-width:1201px) and (max-width:1425px) {
+    .home {
+        .info {
+            .mail {
+                display:none;
+            }
+            .mail_address {
+                display:none;
+            }
+            .phone {
+                margin-bottom:15px;
+                margin-top:15px;
+            }
+        }
+    }
+}
+
+
+@media (min-width:1201px) and (max-width:1550px) {
+    .home {
+        .top {
+            .menu {
+                .mobile {
+                    background:$dark;
+                    height:100%;
+                    position:fixed;
+                    right:-300px;
+                    top:0;
+                    ul {
+                        li {
+                            a {
+                                display:block;
+                                margin-top:25px;
+                            }
+                        }
+                    }
+                }
+            }
+            .home_hamburger {
+                visibility:visible;
+                .home_line {
+                    background:$grey;
+                    height:3px;
+                    transition:all 0.8s;
+                    width:100%;
+                }
+            }
+        }
+    }
+}
+
+
+.home_change .home_lineBottom {
+    transform:rotateZ(405deg) translate(-8px, -6px);
+}
+.home_change .home_lineMiddle {
+    opacity:0;
+}
+.home_change .home_lineTop {
+    transform:rotateZ(-405deg) translate(-8px, 6px);
+}
+.home_change .mobile {
+    left:calc(100% - 300px);
+}
+
+
+@media (min-width:1601px) and (max-width:2000px) {
+    .home {
+        .info {
+            div {
+                div {
+                    img {
+                        margin-left:250px;
+                    }
+                    p {
+                        font-size:20px;
+                    }
+                    .mail {
+                        height:31px;
+                        margin-bottom:18px;
+                        margin-left:106px;
+                        margin-top:18px;
+                        width:42px;
+                    }
+                    .phone {
+                        height:31px;
+                        width:31px;
+                    }
+                    ul {
+                        margin-right:250px;
+                        li {
+                            margin:12.5px;
+                            a {
+                                img {
+                                    height:32px;
+                                    margin-bottom:18px;
+                                    margin-top:18px;
+                                    width:33px;
+                                }
+                            }
+                        }
+                    }
+                    p {
+                        margin-left:12.5px;
+                    }
+                }
+            }
+        }
+        .logo {
+            height:87px;
+            margin-left:250px;
+            margin-top:62px;
+            width:375px;
+        }
+        .top {
+            div {
+                div {
+                    ul {
+                        margin-right:250px;
+                        li {
+                            a {
+                                bottom:25px;
+                                font-size:18px;
+                                margin:0 15px 0 15px;
+                            }
+                        }
+                    }
+                }
+            }
+            .home_hamburger {
+                height:62px;
+                padding:12.5px;
+                width:68px;
+            }
+        }
+        .play {
+            top:71px;
+            img {
+                height:120px;
+                width:120px;
+            }
+        }
+        .property_search {
+            height:62px;
+            .fields {
+                form {
+                    .enter {
+                        font-size:20px;
+                        width:531px;
+                    }
+                    input {
+                        margin-left:25px;
+                        padding:5px 5px 5px 5px;
+                        width:187px;
+                    }
+                    .inputs {
+                        font-size:20px;
+                    }
+                    .submit {
+                        border:1.25px solid $light;
+                        font-size:20px;
+                        padding:5px 5px 5px 5px;
+                    }
+                }
+            }
+            img {
+                height:65px;
+                width:65px;
+            }
+        }
+        .search {
+            font-size:20px;
+            margin-top:531px;
+        }
+    }
+}
+
+
+@media (min-width:2001px) and (max-width:2500px) {
+    .home {
+        .info {
+            div {
+                div {
+                    img {
+                        margin-left:312px;
+                    }
+                    p {
+                        font-size:25px;
+                    }
+                    .mail {
+                        height:38px;
+                        margin-bottom:22px;
+                        margin-left:132px;
+                        margin-top:22px;
+                        width:52px;
+                    }
+                    .phone {
+                        height:38px;
+                        width:38px;
+                    }
+                    ul {
+                        margin-right:312px;
+                        li {
+                            margin:15.6px;
+                            a {
+                                img {
+                                    height:40px;
+                                    margin-bottom:22px;
+                                    margin-top:22px;
+                                    width:41px;
+                                }
+                            }
+                        }
+                    }
+                    p {
+                        margin-left:15.6px;
+                    }
+                }
+            }
+        }
+        .logo {
+            height:108px;
+            margin-left:312px;
+            margin-top:77px;
+            width:468px;
+        }
+        .top {
+            div {
+                div {
+                    ul {
+                        margin-right:312px;
+                        li {
+                            a {
+                                bottom:31px;
+                                font-size:22px;
+                                margin:0 18px 0 18px;
+                            }
+                        }
+                    }
+                }
+            }
+            .home_hamburger {
+                height:77px;
+                padding:15.6px;
+                width:85px;
+            }
+        }
+        .play {
+            top:88px;
+            img {
+                height:150px;
+                width:150px;
+            }
+        }
+        .property_search {
+            height:77px;
+            .fields {
+                form {
+                    .enter {
+                        font-size:25px;
+                        width:663px;
+                    }
+                    input {
+                        margin-left:31px;
+                        padding:6.2px 6.2px 6.2px 6.2px;
+                        width:233px;
+                    }
+                    .inputs {
+                        font-size:25px;
+                    }
+                    .submit {
+                        border:1.56px solid $light;
+                        font-size:25px;
+                        padding:6.2px 6.2px 6.2px 6.2px;
+                    }
+                }
+            }
+            img {
+                height:81px;
+                width:81px;
+            }
+        }
+        .search {
+            font-size:25px;
+            margin-top:663px;
+        }
+    }
+}
+
+
+@media (min-width:2501px) and (max-width:3125px) {
+    .home {
+        .info {
+            div {
+                div {
+                    img {
+                        margin-left:390px;
+                    }
+                    p {
+                        font-size:31px;
+                    }
+                    .mail {
+                        height:47px;
+                        margin-bottom:27px;
+                        margin-left:165px;
+                        margin-top:27px;
+                        width:65px;
+                    }
+                    .phone {
+                        height:47px;
+                        width:47px;
+                    }
+                    ul {
+                        margin-right:390px;
+                        li {
+                            margin:19.5px;
+                            a {
+                                img {
+                                    height:50px;
+                                    margin-bottom:27px;
+                                    margin-top:27px;
+                                    width:51px;
+                                }
+                            }
+                        }
+                    }
+                    p {
+                        margin-left:19.5px;
+                    }
+                }
+            }
+        }
+        .logo {
+            height:135px;
+            margin-left:390px;
+            margin-top:96px;
+            width:585px;
+        }
+        .top {
+            div {
+                div {
+                    ul {
+                        margin-right:390px;
+                        li {
+                            a {
+                                bottom:38px;
+                                font-size:27px;
+                                margin:0 22px 0 22px;
+                            }
+                        }
+                    }
+                }
+            }
+            .home_hamburger {
+                height:96px;
+                padding:19.5px;
+                width:106px;
+            }
+        }
+        .play {
+            top:110px;
+            img {
+                height:187px;
+                width:187px;
+            }
+        }
+        .property_search {
+            height:96px;
+            .fields {
+                form {
+                    .enter {
+                        font-size:31px;
+                        width:828px;
+                    }
+                    input {
+                        margin-left:38px;
+                        padding:7.7px 7.7px 7.7px 7.7px;
+                        width:291px;
+                    }
+                    .inputs {
+                        font-size:31px;
+                    }
+                    .submit {
+                        border:1.95px solid $light;
+                        font-size:31px;
+                        padding:7.7px 7.7px 7.7px 7.7px;
+                    }
+                }
+            }
+            img {
+                height:101px;
+                width:101px;
+            }
+        }
+        .search {
+            font-size:31px;
+            margin-top:828px;
+        }
+    }
+}
+
+
+@media (min-width:3126px) {
+    .home {
+        .info {
+            div {
+                div {
+                    img {
+                        margin-left:487px;
+                    }
+                    p {
+                        font-size:38px;
+                    }
+                    .mail {
+                        height:58px;
+                        margin-bottom:33px;
+                        margin-left:206px;
+                        margin-top:33px;
+                        width:81px;
+                    }
+                    .phone {
+                        height:58px;
+                        width:58px;
+                    }
+                    ul {
+                        margin-right:487px;
+                        li {
+                            margin:24.3px;
+                            a {
+                                img {
+                                    height:62px;
+                                    margin-bottom:33px;
+                                    margin-top:33px;
+                                    width:63px;
+                                }
+                            }
+                        }
+                    }
+                    p {
+                        margin-left:24.3px;
+                    }
+                }
+            }
+        }
+        .logo {
+            height:168px;
+            margin-left:487px;
+            margin-top:120px;
+            width:731px;
+        }
+        .top {
+            div {
+                div {
+                    ul {
+                        margin-right:487px;
+                        li {
+                            a {
+                                bottom:47px;
+                                font-size:33px;
+                                margin:0 27px 0 27px;
+                            }
+                        }
+                    }
+                }
+            }
+            .home_hamburger {
+                height:120px;
+                padding:24.3px;
+                width:132px;
+            }
+        }
+        .play {
+            top:137px;
+            img {
+                height:233px;
+                width:233px;
+            }
+        }
+        .property_search {
+            height:120px;
+            .fields {
+                form {
+                    .enter {
+                        font-size:38px;
+                        width:1035px;
+                    }
+                    input {
+                        margin-left:47px;
+                        padding:9.6px 9.6px 9.6px 9.6px;
+                        width:363px;
+                    }
+                    .inputs {
+                        font-size:38px;
+                    }
+                    .submit {
+                        border:2.43px solid $light;
+                        font-size:38px;
+                        padding:9.6px 9.6px 9.6px 9.6px;
+                    }
+                }
+            }
+            img {
+                height:126px;
+                width:126px;
+            }
+        }
+        .search {
+            font-size:38px;
+            margin-top:1035px;
+        }
+    }
+}

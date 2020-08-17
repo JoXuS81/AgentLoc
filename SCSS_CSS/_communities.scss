@@ -1,0 +1,514 @@
+/*
+
+
+*****************
+Table OF CONTENTS 
+*****************
+
+1. Fonts
+2. Mixins 
+3. Variables
+4. Home 
+ 4.1 Name
+ 4.2 Frontend Developer
+ 4.3 Hamburger Menu
+ 4.4 Image
+ 4.5 Logo 
+ 4.6 Navbar
+
+*/
+
+
+/*  ***** INFO *****  */
+.communities {
+    background:$light;
+    box-shadow: 8px 8px 6px -6px $lightdark;
+    padding-bottom:35px;
+    width:98%;
+    .carousel-control-next-icon {
+        background-image : url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23aaa' viewBox='0 0 8 8'%3E%3Cpath d='M1.5 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+        color: black;
+    }
+    .carousel-control-prev-icon {
+        background-image : url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23aaa' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+        color: black;
+    }
+    .content {
+        margin-top:15px;
+        width:100%;
+        .brampton {
+            border:15px solid $light;
+            margin:0;
+            padding:0;
+            .img_background {
+                background:$lightdark;
+                height:100%;
+                left:0;
+                position:absolute;
+                top:0;
+                width:100%;
+                a {
+                    background:transparent;
+                    border:1px solid $light;
+                    color:$light;
+                    font-family:montserrat;
+                    font-weight:bold;
+                    padding:10px 50px 10px 50px;
+                    &:hover {
+                        background:transparent;
+                        border:1px solid $dark;
+                        text-decoration:none;
+                    }
+                }
+            }
+        }
+        .caledon {
+            border:15px solid $light;
+            margin:0;
+            padding:0;
+            .img_background {
+                background:$lightdark;
+                height:100%;
+                left:0;
+                position:absolute;
+                top:0;
+                width:100%;
+                a {
+                    background:$light;
+                    border:1px solid $light;
+                    color:$dark;
+                    font-family:montserrat;
+                    font-weight:bold;
+                    padding:10px 50px 10px 50px;
+                    &:hover {
+                        background:$grey;
+                        text-decoration:none;
+                    }
+                }
+            }
+        }
+        .etobicoke {
+            border:15px solid $light;
+            margin:0;
+            padding:0;
+            .img_background {
+                background:$lightdark;
+                height:100%;
+                left:0;
+                position:absolute;
+                top:0;
+                width:100%;
+                a {
+                    background:$light;
+                    border:1px solid $light;
+                    color:$dark;
+                    font-family:montserrat;
+                    font-weight:bold;
+                    padding:10px 50px 10px 50px;
+                    &:hover {
+                        background:$grey;
+                        text-decoration:none;
+                    }
+                }
+            }
+        }
+        .mississauga {
+            border:15px solid $light;
+            margin:0;
+            padding:0;
+            .img_background {
+                background:$lightdark;
+                height:100%;
+                left:0;
+                position:absolute;
+                top:0;
+                width:100%;
+                a {
+                    background:$light;
+                    border:1px solid $light;
+                    color:$dark;
+                    font-family:montserrat;
+                    font-weight:bold;
+                    padding:10px 50px 10px 50px;
+                    &:hover {
+                        background:$grey;
+                        text-decoration:none;
+                    }
+                }
+            }
+        }
+        .toronto {
+            border:15px solid $light;
+            margin:0;
+            padding:0;
+            .img_background {
+                background:$lightdark;
+                height:100%;
+                left:0;
+                position:absolute;
+                top:0;
+                width:100%;
+                a {
+                    background:transparent;
+                    border:1px solid $light;
+                    color:$light;
+                    font-family:montserrat;
+                    font-weight:bold;
+                    padding:10px 50px 10px 50px;
+                    &:hover {
+                        background:transparent;
+                        border:1px solid $dark;
+                        text-decoration:none;
+                    }
+                }
+            }
+        }
+    }
+    .heading {
+        margin-top:35px;
+        width:75%;
+        h5 {
+            font-family:montserrat;
+            margin-left:15px;
+        }
+    }
+}
+
+
+@media (max-width:576px) {
+    .communities {
+        .content {
+            .brampton {
+                .img_background {
+                    a {
+                        padding:5px 25px 5px 25px;
+                    }
+                }
+            }
+            .caledon {
+                .img_background {
+                    a {
+                        padding:5px 25px 5px 25px;
+                    }
+                }
+            }
+            .etobicoke {
+                .img_background {
+                    a {
+                        padding:5px 25px 5px 25px;
+                    }
+                }
+            }
+            .mississauga {
+                .img_background {
+                    a {
+                        padding:5px 25px 5px 25px;
+                    }
+                }
+            }
+            .toronto {
+                .img_background {
+                    a {
+                        padding:5px 25px 5px 25px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width:1601px) and (max-width:2000px) {
+    .communities {
+        box-shadow: 10px 10px 7.5px -7.5px $lightdark;
+        padding-bottom:43px;
+        .content {
+            margin-top:18px;
+            .brampton {
+                border:18px solid $light;
+                .img_background {
+                    a {
+                        border:1.25px solid $light;
+                        font-size:20px;
+                        padding:12.5px 62px 12.5px 62px;
+                        &:hover {
+                            border:1.25px solid $dark;
+                        }
+                    }
+                }
+            }
+            .caledon {
+                border:18px solid $light;
+                .img_background {
+                    a {
+                        border:1.25px solid $light;
+                        font-size:20px;
+                        padding:12.5px 62px 12.5px 62px;
+                    }
+                }
+            }
+            .etobicoke {
+                border:18px solid $light;
+                .img_background {
+                    a {
+                        border:1.25px solid $light;
+                        font-size:20px;
+                        padding:12.5px 62px 12.5px 62px;
+                    }
+                }
+            }
+            .mississauga {
+                border:18px solid $light;
+                .img_background {
+                    a {
+                        border:1.25px solid $light;
+                        font-size:20px;
+                        padding:12.5px 62px 12.5px 62px;
+                    }
+                }
+            }
+            .toronto {
+                border:18px solid $light;
+                .img_background {
+                    a {
+                        border:1.25px solid $light;
+                        font-size:20px;
+                        padding:12.5px 62px 12.5px 62px;
+                        &:hover {
+                            border:1.25px solid $dark;
+                        }
+                    }
+                }
+            }
+        }
+        .heading {
+            margin-top:43px;
+            h5 {
+                font-size:25px;
+                margin-left:18px;
+            }
+        }
+    }
+}
+
+
+@media (min-width:2001px) and (max-width:2500px) {
+    .communities {
+        box-shadow: 12.5px 12.5px 9.3px -9.3px $lightdark;
+        padding-bottom:53px;
+        .content {
+            margin-top:22px;
+            .brampton {
+                border:22px solid $light;
+                .img_background {
+                    a {
+                        border:1.56px solid $light;
+                        font-size:25px;
+                        padding:15.6px 77px 15.6px 77px;
+                        &:hover {
+                            border:1.56px solid $dark;
+                        }
+                    }
+                }
+            }
+            .caledon {
+                border:22px solid $light;
+                .img_background {
+                    a {
+                        border:1.56px solid $light;
+                        font-size:25px;
+                        padding:15.6px 77px 15.6px 77px;
+                    }
+                }
+            }
+            .etobicoke {
+                border:22px solid $light;
+                .img_background {
+                    a {
+                        border:1.56px solid $light;
+                        font-size:25px;
+                        padding:15.6px 77px 15.6px 77px;
+                    }
+                }
+            }
+            .mississauga {
+                border:22px solid $light;
+                .img_background {
+                    a {
+                        border:1.56px solid $light;
+                        font-size:25px;
+                        padding:15.6px 77px 15.6px 77px;
+                    }
+                }
+            }
+            .toronto {
+                border:22px solid $light;
+                .img_background {
+                    a {
+                        border:1.56px solid $light;
+                        font-size:25px;
+                        padding:15.6px 77px 15.6px 77px;
+                        &:hover {
+                            border:1.56px solid $dark;
+                        }
+                    }
+                }
+            }
+        }
+        .heading {
+            margin-top:53px;
+            h5 {
+                font-size:31px;
+                margin-left:22px;
+            }
+        }
+    }
+}
+
+
+@media (min-width:2501px) and (max-width:3125px) {
+    .communities {
+        box-shadow: 15.6px 15.6px 11.6px -11.6px $lightdark;
+        padding-bottom:66px;
+        .content {
+            margin-top:27px;
+            .brampton {
+                border:27px solid $light;
+                .img_background {
+                    a {
+                        border:1.95px solid $light;
+                        font-size:31px;
+                        padding:19.5px 96px 19.5px 96px;
+                        &:hover {
+                            border:1.95px solid $dark;
+                        }
+                    }
+                }
+            }
+            .caledon {
+                border:27px solid $light;
+                .img_background {
+                    a {
+                        border:1.95px solid $light;
+                        font-size:31px;
+                        padding:19.5px 96px 19.5px 96px;
+                    }
+                }
+            }
+            .etobicoke {
+                border:27px solid $light;
+                .img_background {
+                    a {
+                        border:1.95px solid $light;
+                        font-size:31px;
+                        padding:19.5px 96px 19.5px 96px;
+                    }
+                }
+            }
+            .mississauga {
+                border:27px solid $light;
+                .img_background {
+                    a {
+                        border:1.95px solid $light;
+                        font-size:31px;
+                        padding:19.5px 96px 19.5px 96px;
+                    }
+                }
+            }
+            .toronto {
+                border:27px solid $light;
+                .img_background {
+                    a {
+                        border:1.95px solid $light;
+                        font-size:31px;
+                        padding:19.5px 96px 19.5px 96px;
+                        &:hover {
+                            border:1.95px solid $dark;
+                        }
+                    }
+                }
+            }
+        }
+        .heading {
+            margin-top:66px;
+            h5 {
+                font-size:38px;
+                margin-left:27px;
+            }
+        }
+    }
+}
+
+
+@media (min-width:3126px) {
+    .communities {
+        box-shadow: 19.5px 19.5px 14.5px -14.5px $lightdark;
+        padding-bottom:82px;
+        .content {
+            margin-top:33px;
+            .brampton {
+                border:33px solid $light;
+                .img_background {
+                    a {
+                        border:2.43px solid $light;
+                        font-size:38px;
+                        padding:24.3px 120px 24.3px 120px;
+                        &:hover {
+                            border:2.43px solid $dark;
+                        }
+                    }
+                }
+            }
+            .caledon {
+                border:33px solid $light;
+                .img_background {
+                    a {
+                        border:2.43px solid $light;
+                        font-size:38px;
+                        padding:24.3px 120px 24.3px 120px;
+                    }
+                }
+            }
+            .etobicoke {
+                border:33px solid $light;
+                .img_background {
+                    a {
+                        border:2.43px solid $light;
+                        font-size:38px;
+                        padding:24.3px 120px 24.3px 120px;
+                    }
+                }
+            }
+            .mississauga {
+                border:33px solid $light;
+                .img_background {
+                    a {
+                        border:2.43px solid $light;
+                        font-size:38px;
+                        padding:24.3px 120px 24.3px 120px;
+                    }
+                }
+            }
+            .toronto {
+                border:33px solid $light;
+                .img_background {
+                    a {
+                        border:2.43px solid $light;
+                        font-size:38px;
+                        padding:24.3px 120px 24.3px 120px;
+                        &:hover {
+                            border:2.43px solid $dark;
+                        }
+                    }
+                }
+            }
+        }
+        .heading {
+            margin-top:82px;
+            h5 {
+                font-size:47px;
+                margin-left:33px;
+            }
+        }
+    }
+}

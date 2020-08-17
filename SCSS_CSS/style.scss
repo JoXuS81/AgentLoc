@@ -1,0 +1,2219 @@
+/*
+
+
+*****************
+TABLE OF CONTENTS 
+*****************
+
+1. Fonts
+2. Mixins 
+3. Variables
+4. Import/About 
+5. Blog 
+ 5.1 Content (after Heading)
+ 5.2 Heading 
+  5.2.1 Heading/H1
+6. Body 
+7. Coding 
+ 7.1 Left Side 
+ 7.2 Right Side 
+8. Contact 
+ 8.1 Contact Form 
+ 8.2 Info Area 
+ 8.3 Heading 
+  8.3.1 Heading/H1
+9. Footer 
+ 9.1 Content 
+  9.1.1 Social Icons
+10. Import/Home 
+11. Inputs 
+12. Import/Loader
+13. Mobile Apps 
+ 13.1 Left Side 
+ 13.2 Right Side
+ 13.3 Top 
+  13.3.1 Heading/H1
+14. Projects 
+ 14.1 Heading 
+  14.1.1 Heading/H1 
+ 14.2 Images 
+ 14.3 Filter Navbar
+15. Contact Form Textarea
+
+*/
+
+
+/*  ***** FONTS *****  */
+@font-face {
+    font-family:lora;
+    src:url("../Fonts/Lora/Lora-Regular.ttf");
+}
+@font-face {
+    font-family:montserrat;
+    src:url("../Fonts/Montserrat/Montserrat-Regular.ttf");
+}
+
+
+/*  ***** MIXINS *****  */
+@mixin h1 {
+}
+@mixin h2 {   
+}
+@mixin h3 {
+}
+@mixin h4 {
+    font-size:24px;
+}
+@mixin h4_2000 {
+    font-size:30px;
+}
+@mixin h4_2500 {
+    font-size:37px;
+}
+@mixin h4_3125 {
+    font-size:46px;
+}
+@mixin h4_3850 {
+    font-size:57px;
+}
+
+
+/*  ***** VARIABLES *****  */
+$dark:#000000;
+$grey:#f2f2f2;
+$greydark:#81838a;
+$light:#ffffff;
+$lightdark:rgba(0,0,0,0.35);
+$lighttransparent:rgba(256,256,256,0.85);
+$middledark:rgba(0,0,0,0.65);
+
+
+/*  ***** BODY *****  */
+body {
+    background:$grey;
+    @import "communities";
+    @import "home";
+    @import "info";
+    @import "neighbourhood";
+}
+
+
+.contact {
+    background:url("../Images/Contact/Contact.jpg");
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:cover;
+    box-shadow:inset 0 0 0 4000px $middledark;
+    margin:0;
+    margin-top:30px;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    -webkit-background-size:cover;
+    width:98%;
+    .content {
+        margin-bottom:30px;
+        margin-top:30px;
+        form {
+            margin:0;
+            margin-top:25px;
+            padding:0;
+            .form_field {
+                border:15px solid transparent;
+                display:inline;
+                .field {
+                    background:$lighttransparent;
+                    height:40px;
+                    width:325px;
+                    .email {
+                        display:inline;
+                    }
+                    .name {
+                        display:inline;
+                    }
+                }
+            }
+            .form_fieldMessage {
+                border:15px solid transparent;
+                textarea {
+                    background:$lighttransparent;
+                    height:200px;
+                    width:684.5px;
+                }
+            }
+            .mail {
+                display:inline;
+                margin-left:30px;
+            }
+            p {
+                color:$light;
+                display:inline;
+                font-family:montserrat;
+                font-weight:bold;
+                margin-left:10px;
+            }
+            .phone {
+                display:inline;
+                margin-left:15px;
+            }
+            .social {
+                display:inline;
+                margin-left:30px;
+                img {
+                    margin-right:7px;
+                }
+            }
+            .submit {
+                background:transparent;
+                border:1px solid $light;
+                color:$light;
+                font-family:montserrat;
+                margin-left:15px;
+                margin-top:15px;
+                padding:10px 40px 10px 40px;
+            }
+        }
+        h5 {
+            color:$light;
+            font-family:montserrat;
+            margin:0;
+            margin-left:15px;
+            padding:0;
+        }
+    }
+}
+
+
+footer {
+    background:$light;
+    box-shadow: 8px 8px 6px -6px $lightdark;
+    font-family:montserrat;
+    margin-bottom:30px;
+    margin-top:30px;
+    width:98%;
+    .bottom {
+        margin:0;
+        margin-bottom:30px;
+        margin-left:100px;
+        margin-top:25px;
+    }
+    .content {
+        margin-left:100px;
+        margin-top:30px;
+        width:800px;
+        .info {
+            margin-top:20px;
+        }
+        .line {
+            background:$dark;
+            height:2px;
+            width:800px;
+        }
+        .mail_info {
+            margin-top:15px;
+            .email {
+                display:inline;
+                margin-left:10px;
+            }
+            .mail {
+                display:inline;
+            }
+        }
+        .menu {
+            margin-top:20px;
+        }
+        .number {
+            display:inline;
+            margin-left:10px;
+        }
+        .option {
+            color:$dark;
+            display:block;
+            text-decoration:none;
+            &:hover {
+                color:$greydark;
+            }
+        }
+        .phone {
+            display:inline;
+        }
+    }
+}
+
+
+input[placeholder] {
+    font-family:montserrat;
+    padding-left:15px;
+}
+
+
+.properties {
+    padding-bottom:35px;
+    width:98%;
+    .carousel-control-next-icon {
+        background-image : url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23aaa' viewBox='0 0 8 8'%3E%3Cpath d='M1.5 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+        color: black;
+    }
+    .carousel-control-prev-icon {
+        background-image : url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23aaa' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+        color: black;
+    }
+    .content {
+        margin-top:15px;
+        width:100%;
+        .caledon {
+            border:15px solid $grey;
+            margin:0;
+            padding:0;
+            .img_background {
+                background:$lightdark;
+                height:100%;
+                left:0;
+                position:absolute;
+                top:0;
+                width:100%;
+                a {
+                    background:transparent;
+                    border:1px solid $light;
+                    color:$light;
+                    font-family:montserrat;
+                    font-weight:bold;
+                    padding:10px 50px 10px 50px;
+                    &:hover {
+                        background:transparent;
+                        border:1px solid $dark;
+                        text-decoration:none;
+                    }
+                }
+            }
+        }
+        .etobicoke {
+            border:15px solid $grey;
+            margin:0;
+            padding:0;
+            .img_background {
+                background:$lightdark;
+                height:100%;
+                left:0;
+                position:absolute;
+                top:0;
+                width:100%;
+                a {
+                    background:$light;
+                    border:1px solid $light;
+                    color:$dark;
+                    font-family:montserrat;
+                    font-weight:bold;
+                    padding:10px 50px 10px 50px;
+                    &:hover {
+                        background:$grey;
+                        text-decoration:none;
+                    }
+                }
+            }
+        }
+        .mississauga {
+            border:15px solid $grey;
+            margin:0;
+            padding:0;
+            .img_background {
+                background:$lightdark;
+                height:100%;
+                left:0;
+                position:absolute;
+                top:0;
+                width:100%;
+                a {
+                    background:$light;
+                    border:1px solid $light;
+                    color:$dark;
+                    font-family:montserrat;
+                    font-weight:bold;
+                    padding:10px 50px 10px 50px;
+                    &:hover {
+                        background:$grey;
+                        text-decoration:none;
+                    }
+                }
+            }
+        }
+        .mississauga_transparent {
+            border:15px solid $grey;
+            margin:0;
+            padding:0;
+            .img_background {
+                background:$lightdark;
+                height:100%;
+                left:0;
+                position:absolute;
+                top:0;
+                width:100%;
+                a {
+                    background:transparent;
+                    border:1px solid $light;
+                    color:$light;
+                    font-family:montserrat;
+                    font-weight:bold;
+                    padding:10px 50px 10px 50px;
+                    &:hover {
+                        background:transparent;
+                        border:1px solid $dark;
+                        text-decoration:none;
+                    }
+                }
+            }
+        }
+        .toronto {
+            border:15px solid $grey;
+            margin:0;
+            padding:0;
+            .img_background {
+                background:$lightdark;
+                height:100%;
+                left:0;
+                position:absolute;
+                top:0;
+                width:100%;
+                a {
+                    background:$light;
+                    border:1px solid $light;
+                    color:$dark;
+                    font-family:montserrat;
+                    font-weight:bold;
+                    padding:10px 50px 10px 50px;
+                    &:hover {
+                        background:$grey;
+                        text-decoration:none;
+                    }
+                }
+            }
+        }
+        .toronto_transparent {
+            border:15px solid $grey;
+            margin:0;
+            padding:0;
+            .img_background {
+                background:$lightdark;
+                height:100%;
+                left:0;
+                position:absolute;
+                top:0;
+                width:100%;
+                a {
+                    background:transparent;
+                    border:1px solid $light;
+                    color:$light;
+                    font-family:montserrat;
+                    font-weight:bold;
+                    padding:10px 50px 10px 50px;
+                    &:hover {
+                        background:transparent;
+                        border:1px solid $dark;
+                        text-decoration:none;
+                    }
+                }
+            }
+        }
+    }
+    .heading {
+        margin-top:35px;
+        width:75%;
+        h5 {
+            font-family:montserrat;
+            margin-left:15px;
+        }
+    }
+}
+
+
+.testimonials {
+    background:$light;
+    font-family:montserrat;
+    margin-top:25px;
+    width:98%;
+    .content {
+        margin-bottom:100px;
+        margin-top:100px;
+        .carousel-control-next-icon {
+            background-image : url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23aaa' viewBox='0 0 8 8'%3E%3Cpath d='M1.5 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+            color: black;
+        }
+        .carousel-control-prev-icon {
+            background-image : url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23aaa' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+            color: black;
+        }
+        .heading {
+            background:url("../Images/Testimonials/Quote.png");
+            background-position:center;
+            background-repeat:no-repeat;
+            background-size:cover;
+            height:168px;
+            margin:0;
+            -moz-background-size:cover;
+            -o-background-size:cover;
+            -webkit-background-size:cover;
+            width:200px;
+            h5 {
+                position:relative;
+                top:115px;
+            }
+        }
+        p {
+            margin-top:35px;
+        }
+        .slide {
+            height:300px;
+            .carousel-indicators {
+                .indicator {
+                    border:1px solid $dark;
+                }
+            }
+            .carousel-inner {
+                margin-top:40px;
+                width:75%;
+            }
+        }
+    }
+}
+
+
+textarea[placeholder] {
+    font-family:montserrat;
+    padding-left:15px;
+}
+
+
+.tina {
+    background:$light;
+    margin-top:25px;
+    width:98%;
+    .left {
+        background:url("../Images/Tina/Tina.jpg");
+        background-position:center;
+        background-repeat:no-repeat;
+        background-size:cover;
+        box-shadow:inset 0 0 0 4000px $lightdark;
+        margin:0;
+        -moz-background-size:cover;
+        -o-background-size:cover;
+        -webkit-background-size:cover;
+    }
+    .right {
+        box-shadow: 8px 8px 6px -6px $lightdark;
+        .button {
+            margin-bottom:40px;
+            margin-top:40px;
+            a {
+                background:transparent;
+                border:2px solid $greydark;
+                color:$greydark;
+                padding:10px 40px 10px 40px;
+            }
+        }
+        h4 {
+            @include h4;
+            font-family:lora;
+            font-weight:bold;
+        }
+        h5 {
+            font-family:montserrat;
+        }
+        .mail_address {
+            margin-top:15px;
+            .mail {
+                color:$greydark;
+                display:inline;
+                font-family:montserrat;
+                margin-left:10px;
+            }
+        }
+        p {
+            font-family:lora;
+            text-align:justify;
+        }
+        .phone_number {
+            margin-top:25px;
+            .number {
+                color:$greydark;
+                display:inline;
+                font-family:montserrat;
+                margin-left:10px;
+            }
+        }
+        .text {
+            margin-left:75px;
+            margin-top:30px;
+        }
+    }
+}
+
+
+.worth {
+    background:url("../Images/Worth/Building.jpg");
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:cover;
+    box-shadow:inset 0 0 0 4000px $lightdark;
+    margin:0;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    -webkit-background-size:cover;
+    width:98%;
+    .content {
+        padding:100px;
+        .button {
+            background:transparent;
+            border:2px solid $light;
+            color:$light;
+            margin-left:5px;
+        }
+        .homes {
+            color:$light;
+            font-family:montserrat;
+            font-weight:bold;
+        }
+        p {
+            color:$light;
+            font-weight:bold;
+        }
+        .type {
+            width:450px;
+        }
+    }
+}
+
+
+@media (max-width:576px) {
+    .contact {
+        .content {
+            form {
+                .form_field {
+                    display:block;
+                    .field {
+                        width:275px;
+                        .email {
+                            display:block;
+                        }
+                        .name {
+                            display:block;
+                        }
+                    }
+                }
+                .form_fieldMessage {
+                    border:15px solid transparent;
+                    textarea {
+                        width:275px;
+                    }
+                }
+                .mail {
+                    display:block;
+                    margin:0;
+                    margin-left:15px;
+                    margin-top:20px;
+                    padding:0;
+                }
+                p {
+                    display:inline;
+                    margin-left:10px;
+                }
+                .phone {
+                    display:block;
+                }
+                .social {
+                    display:inline;
+                    margin-left:15px;
+                    img {
+                        margin-right:7px;
+                        margin-top:20px;
+                    }
+                }
+                .submit {
+                    margin-left:15px;
+                    margin-top:15px;
+                    padding:10px 40px 10px 40px;
+                }
+            }
+            h5 {
+                color:$light;
+                font-family:montserrat;
+                margin:0;
+                margin-left:15px;
+                padding:0;
+            }
+        }
+    }
+    footer {
+        .bottom_text {
+            display:flex;
+            justify-content:center;
+            .bottom {
+                margin:0;
+                margin-top:25px;
+                padding:0;
+                text-align:center;
+                width:90%;
+            }
+        }
+        h5 {
+            margin:0;
+            margin-top:30px;
+            text-align:center;
+            padding:0;
+        }
+        .holder {
+            display:flex;
+            justify-content:center;
+            .content {
+                margin:0;
+                padding:0;
+                .info {
+                    display:flex;
+                    justify-content:center;
+                    .top {
+                        margin-top:25px;
+                    }
+                }
+                .line {
+                    display:none;
+                }
+                .menu {
+                    margin-top:35px;
+                    a {
+                        text-align:center;
+                    }
+                }
+            }
+        }
+    }
+    .properties {
+        .content {
+            .caledon {
+                .img_background {
+                    a {
+                        padding:2.5px 12px 2.5px 12px;
+                    }
+                }
+            }
+            .etobicoke {
+                .img_background {
+                    a {
+                        padding:2.5px 12px 2.5px 12px;
+                    }
+                }
+            }
+            .mississauga {
+                .img_background {
+                    a {
+                        padding:2.5px 12px 2.5px 12px;
+                    }
+                }
+            }
+            .mississauga_transparent {
+                .img_background {
+                    a {
+                        padding:2.5px 12px 2.5px 12px;
+                    }
+                }
+            }
+            .toronto {
+                .img_background {
+                    a {
+                        padding:2.5px 12px 2.5px 12px;
+                    }
+                }
+            }
+            .toronto_transparent {
+                .img_background {
+                    a {
+                        padding:2.5px 12px 2.5px 12px;
+                    }
+                }
+            }
+        }
+    }
+    .tina {
+        .right {
+            .bottom {
+                display:flex;
+                justify-content:center;
+            }
+            .mail_address {
+                display:none;
+            }
+            .right_text {
+                display:flex;
+                justify-content:center;
+                .text {
+                    margin-left:0;
+                    h4 {
+                        text-align:center;
+                    }
+                    h5 {
+                        text-align:center;
+                    }
+                    p {
+                        text-align:center;
+                    }
+                }
+            }
+        }
+    }
+    .worth {
+        .content {
+            .button {
+                margin:0;
+                margin-top:25px;
+            }
+            input {
+                display:block;
+            }
+            .type {
+                width:260px;
+            }
+        }
+    }
+}
+
+
+@media (min-width:577px) and (max-width:768px) {
+    .contact {
+        .content {
+            form {
+                .form_field {
+                    display:block;
+                    .field {
+                        .email {
+                            display:block;
+                        }
+                        .name {
+                            display:block;
+                        }
+                    }
+                }
+                .form_fieldMessage {
+                    border:15px solid transparent;
+                    textarea {
+                        width:325px;
+                    }
+                }
+                .mail {
+                    display:block;
+                    margin:0;
+                    margin-left:15px;
+                    margin-top:20px;
+                    padding:0;
+                }
+                p {
+                    display:inline;
+                    margin-left:10px;
+                }
+                .phone {
+                    display:block;
+                }
+                .social {
+                    display:inline;
+                    margin-left:15px;
+                    img {
+                        margin-right:7px;
+                        margin-top:20px;
+                    }
+                }
+                .submit {
+                    margin-left:15px;
+                    margin-top:15px;
+                    padding:10px 40px 10px 40px;
+                }
+            }
+            h5 {
+                color:$light;
+                font-family:montserrat;
+                margin:0;
+                margin-left:15px;
+                padding:0;
+            }
+        }
+    }
+    footer {
+        .bottom_text {
+            display:flex;
+            justify-content:center;
+            .bottom {
+                margin:0;
+                margin-top:25px;
+                padding:0;
+                text-align:center;
+                width:90%;
+            }
+        }
+        h5 {
+            margin:0;
+            margin-top:30px;
+            text-align:center;
+            padding:0;
+        }
+        .holder {
+            display:flex;
+            justify-content:center;
+            .content {
+                margin:0;
+                padding:0;
+                .info {
+                    display:flex;
+                    justify-content:center;
+                    .top {
+                        margin-top:25px;
+                    }
+                }
+                .line {
+                    display:none;
+                }
+                .menu {
+                    margin-top:35px;
+                    a {
+                        text-align:center;
+                    }
+                }
+            }
+        }
+    }
+    .tina {
+        .right {
+            .bottom {
+                display:flex;
+                justify-content:center;
+            }
+            .right_text {
+                display:flex;
+                justify-content:center;
+                .text {
+                    margin-left:0;
+                    h4 {
+                        text-align:center;
+                    }
+                    h5 {
+                        text-align:center;
+                    }
+                    p {
+                        text-align:center;
+                    }
+                }
+            }
+        }
+    }
+    .worth {
+        .content {
+            .button {
+                margin:0;
+                margin-top:25px;
+            }
+            input {
+                display:block;
+            }
+        }
+    }
+}
+
+
+@media (min-width:769px) and (max-width:992px) {
+    footer {
+        .bottom_text {
+            display:flex;
+            justify-content:center;
+            .bottom {
+                margin:0;
+                margin-top:25px;
+                padding:0;
+                text-align:center;
+                width:90%;
+            }
+        }
+        h5 {
+            margin:0;
+            margin-top:30px;
+            text-align:center;
+            padding:0;
+        }
+        .holder {
+            display:flex;
+            justify-content:center;
+            .content {
+                margin:0;
+                padding:0;
+                .info {
+                    display:flex;
+                    justify-content:center;
+                    .top {
+                        margin-top:25px;
+                    }
+                }
+                .line {
+                    display:none;
+                }
+                .menu {
+                    margin-top:35px;
+                    a {
+                        text-align:center;
+                    }
+                }
+            }
+        }
+    }
+    .tina {
+        .right {
+            .bottom {
+                display:flex;
+                justify-content:center;
+            }
+            .right_text {
+                display:flex;
+                justify-content:center;
+                .text {
+                    margin-left:0;
+                    h4 {
+                        text-align:center;
+                    }
+                    h5 {
+                        text-align:center;
+                    }
+                    p {
+                        text-align:center;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width:993px) and (max-width:1200px) {
+    footer {
+        .bottom_text {
+            display:flex;
+            justify-content:center;
+            .bottom {
+                margin:0;
+                margin-top:25px;
+                padding:0;
+                text-align:center;
+                width:90%;
+            }
+        }
+        h5 {
+            margin:0;
+            margin-top:30px;
+            text-align:center;
+            padding:0;
+        }
+        .holder {
+            display:flex;
+            justify-content:center;
+            .content {
+                margin:0;
+                padding:0;
+                .info {
+                    display:flex;
+                    justify-content:center;
+                    .top {
+                        margin-top:25px;
+                    }
+                }
+                .line {
+                    display:none;
+                }
+                .menu {
+                    margin-top:35px;
+                    a {
+                        text-align:center;
+                    }
+                }
+            }
+        }
+    }
+    .tina {
+        .right {
+            .bottom {
+                display:flex;
+                justify-content:center;
+            }
+            .right_text {
+                display:flex;
+                justify-content:center;
+                .text {
+                    margin-left:0;
+                    h4 {
+                        text-align:center;
+                    }
+                    h5 {
+                        text-align:center;
+                    }
+                    p {
+                        text-align:center;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width:1601px) and (max-width:2000px) {
+    .contact {
+        margin-top:37px;
+        .content {
+            margin-bottom:37px;
+            margin-top:37px;
+            form {
+                margin-top:31px;
+                .form_field {
+                    border:18px solid transparent;
+                    .field {
+                        font-size:20px;
+                        height:50px;
+                        width:406px;
+                    }
+                }
+                .form_fieldMessage {
+                    border:18px solid transparent;
+                    textarea {
+                        font-size:20px;
+                        height:250px;
+                        width:855px;
+                    }
+                }
+                .mail {
+                    margin-left:37px;
+                    img {
+                        height:31px;
+                        width:42px;
+                    }
+                }
+                p {
+                    font-size:20px;
+                    margin-left:12.5px;
+                }
+                .phone {
+                    margin-left:18px;
+                    img {
+                        height:31px;
+                        width:31px;
+                    }
+                }
+                .social {
+                    margin-left:37px;
+                    img {
+                        height:32px;
+                        margin-right:8.7px;
+                        width:33px;
+                    }
+                }
+                .submit {
+                    border:1.25px solid $light;
+                    font-size:20px;
+                    margin-left:18px;
+                    margin-top:18px;
+                    padding:12.5px 50px 12.5px 50px;
+                }
+            }
+            h5 {
+                font-size:25px;
+                margin-left:18px;
+            }
+        }
+    }
+    footer {
+        box-shadow: 10px 10px 7.5px -7.5px $lightdark;
+        margin-bottom:37px;
+        margin-top:37px;
+        .bottom {
+            font-size:20px;
+            margin-bottom:37px;
+            margin-left:125px;
+            margin-top:31px;
+        }
+        .content {
+            margin-left:125px;
+            margin-top:37px;
+            width:1000px;
+            h5 {
+                font-size:25px;
+            }
+            .info {
+                margin-top:25px;
+                .phone {
+                    height:31px;
+                    width:31px;
+                }
+            }
+            .line {
+                height:2.5px;
+                width:1000px;
+            }
+            .mail_info {
+                margin-top:18px;
+                .email {
+                    margin-left:12.5px;
+                }
+                .mail {
+                    height:23px;
+                    width:31px;
+                }
+            }
+            .menu {
+                margin-top:25px;
+                a {
+                    font-size:20px;
+                }
+            }
+            .number {
+                margin-left:12.5px;
+            }
+            p {
+                font-size:20px;
+            }
+        }
+    }
+    .properties {
+        padding-bottom:43px;
+        .content {
+            margin-top:18px;
+            .caledon {
+                border:18px solid $grey;
+                .img_background {
+                    a {
+                        border:1.25px solid $light;
+                        font-size:20px;
+                        padding:12.5px 62px 12.5px 62px;
+                        &:hover {
+                            border:1.25px solid $dark;
+                        }
+                    }
+                }
+            }
+            .etobicoke {
+                border:18px solid $grey;
+                .img_background {
+                    a {
+                        border:1.25px solid $light;
+                        font-size:20px;
+                        padding:12.5px 62px 12.5px 62px;
+                    }
+                }
+            }
+            .mississauga {
+                border:18px solid $grey;
+                .img_background {
+                    a {
+                        border:1.25px solid $light;
+                        font-size:20px;
+                        padding:12.5px 62px 12.5px 62px;
+                    }
+                }
+            }
+            .mississauga_transparent {
+                border:18px solid $grey;
+                .img_background {
+                    a {
+                        border:1.25px solid $light;
+                        font-size:20px;
+                        padding:12.5px 62px 12.5px 62px;
+                        &:hover {
+                            border:1.25px solid $dark;
+                        }
+                    }
+                }
+            }
+            .toronto {
+                border:18px solid $grey;
+                .img_background {
+                    a {
+                        border:1.25px solid $light;
+                        font-size:20px;
+                        padding:12.5px 62px 12.5px 62px;
+                    }
+                }
+            }
+            .toronto_transparent {
+                border:18px solid $grey;
+                .img_background {
+                    a {
+                        border:1.25px solid $light;
+                        font-size:20px;
+                        padding:12.5px 62px 12.5px 62px;
+                        &:hover {
+                            border:1.25px solid $dark;
+                        }
+                    }
+                }
+            }
+        }
+        .heading {
+            margin-top:43px;
+            h5 {
+                font-size:25px;
+                margin-left:18px;
+            }
+        }
+    }
+    .testimonials {
+        margin-top:31px;
+        .content {
+            margin-bottom:125px;
+            margin-top:125px;
+            .heading {
+                height:210px;
+                width:250px;
+                h5 {
+                    font-size:25px;
+                    top:143px;
+                }
+            }
+            p {
+                font-size:20px;
+                margin-top:43px;
+            }
+            .slide {
+                height:375px;
+                .carousel-inner {
+                    margin-top:50px;
+                }
+            }
+        }
+    }
+    .tina {
+        margin-top:31px;
+        .right {
+            box-shadow: 10px 10px 7.5px -7.5px $lightdark;
+            .button {
+                margin-bottom:50px;
+                margin-top:50px;
+                a {
+                    border:2.5px solid $greydark;
+                    font-size:20px;
+                    padding:12.5px 50px 12.5px 50px;
+                }
+            }
+            h4 {
+                @include h4_2000;
+            }
+            h5 {
+                font-size:25px;
+            }
+            .mail_address {
+                margin-top:18px;
+                img {
+                    height:22px;
+                    width:31px;
+                }
+                .mail {
+                    margin-left:12.5px;
+                }
+            }
+            p {
+                font-size:20px;
+            }
+            .phone_number {
+                margin-top:31px;
+                img {
+                    height:31px;
+                    width:31px;
+                }
+                .number {
+                    margin-left:12.5px;
+                }
+            }
+            .text {
+                margin-left:93px;
+                margin-top:37px;
+            }
+        }
+    }
+    .worth {
+        .content {
+            padding:125px;
+            .button {
+                border:2.5px solid $light;
+                font-size:20px;
+                margin-left:6.25px;
+            }
+            p {
+                font-size:20px;
+            }
+            .type {
+                font-size:20px;
+                width:562px;
+            }
+        }
+    }
+}
+
+
+@media (min-width:2001px) and (max-width:2500px) {
+    .contact {
+        margin-top:46px;
+        .content {
+            margin-bottom:46px;
+            margin-top:46px;
+            form {
+                margin-top:38px;
+                .form_field {
+                    border:22px solid transparent;
+                    .field {
+                        font-size:25px;
+                        height:62px;
+                        width:507px;
+                    }
+                }
+                .form_fieldMessage {
+                    border:22px solid transparent;
+                    textarea {
+                        font-size:25px;
+                        height:312px;
+                        width:1093px;
+                    }
+                }
+                .mail {
+                    margin-left:46px;
+                    img {
+                        height:38px;
+                        width:52px;
+                    }
+                }
+                p {
+                    font-size:25px;
+                    margin-left:15.6px;
+                }
+                .phone {
+                    margin-left:22px;
+                    img {
+                        height:38px;
+                        width:38px;
+                    }
+                }
+                .social {
+                    margin-left:46px;
+                    img {
+                        height:40px;
+                        margin-right:10.8px;
+                        width:41px;
+                    }
+                }
+                .submit {
+                    border:1.56px solid $light;
+                    font-size:25px;
+                    margin-left:22px;
+                    margin-top:22px;
+                    padding:15.6px 62px 15.6px 62px;
+                }
+            }
+            h5 {
+                font-size:31px;
+                margin-left:22px;
+            }
+        }
+    }
+    footer {
+        box-shadow: 12.5px 12.5px 9.3px -9.3px $lightdark;
+        margin-bottom:46px;
+        margin-top:46px;
+        .bottom {
+            font-size:25px;
+            margin-bottom:46px;
+            margin-left:156px;
+            margin-top:38px;
+        }
+        .content {
+            margin-left:156px;
+            margin-top:46px;
+            width:1250px;
+            h5 {
+                font-size:31px;
+            }
+            .info {
+                margin-top:31px;
+                .phone {
+                    height:38px;
+                    width:38px;
+                }
+            }
+            .line {
+                height:3.1px;
+                width:1250px;
+            }
+            .mail_info {
+                margin-top:22px;
+                .email {
+                    margin-left:15.6px;
+                }
+                .mail {
+                    height:28px;
+                    width:38px;
+                }
+            }
+            .menu {
+                margin-top:31px;
+                a {
+                    font-size:25px;
+                }
+            }
+            .number {
+                margin-left:15.6px;
+            }
+            p {
+                font-size:25px;
+            }
+        }
+    }
+    .properties {
+        padding-bottom:53px;
+        .content {
+            margin-top:22px;
+            .caledon {
+                border:22px solid $grey;
+                .img_background {
+                    a {
+                        border:1.56px solid $light;
+                        font-size:25px;
+                        padding:15.6px 77px 15.6px 77px;
+                        &:hover {
+                            border:1.56px solid $dark;
+                        }
+                    }
+                }
+            }
+            .etobicoke {
+                border:22px solid $grey;
+                .img_background {
+                    a {
+                        border:1.56px solid $light;
+                        font-size:25px;
+                        padding:15.6px 77px 15.6px 77px;
+                    }
+                }
+            }
+            .mississauga {
+                border:22px solid $grey;
+                .img_background {
+                    a {
+                        border:1.56px solid $light;
+                        font-size:25px;
+                        padding:15.6px 77px 15.6px 77px;
+                    }
+                }
+            }
+            .mississauga_transparent {
+                border:22px solid $grey;
+                .img_background {
+                    a {
+                        border:1.56px solid $light;
+                        font-size:25px;
+                        padding:15.6px 77px 15.6px 77px;
+                        &:hover {
+                            border:1.56px solid $dark;
+                        }
+                    }
+                }
+            }
+            .toronto {
+                border:22px solid $grey;
+                .img_background {
+                    a {
+                        border:1.56px solid $light;
+                        font-size:25px;
+                        padding:15.6px 77px 15.6px 77px;
+                    }
+                }
+            }
+            .toronto_transparent {
+                border:22px solid $grey;
+                .img_background {
+                    a {
+                        border:1.56px solid $light;
+                        font-size:25px;
+                        padding:15.6px 77px 15.6px 77px;
+                        &:hover {
+                            border:1.56px solid $dark;
+                        }
+                    }
+                }
+            }
+        }
+        .heading {
+            margin-top:53px;
+            h5 {
+                font-size:31px;
+                margin-left:22px;
+            }
+        }
+    }
+    .testimonials {
+        margin-top:38px;
+        .content {
+            margin-bottom:156px;
+            margin-top:156px;
+            .heading {
+                height:267px;
+                width:312px;
+                h5 {
+                    font-size:31px;
+                    top:178px;
+                }
+            }
+            p {
+                font-size:25px;
+                margin-top:53px;
+            }
+            .slide {
+                height:468px;
+                .carousel-inner {
+                    margin-top:62px;
+                }
+            }
+        }
+    }
+    .tina {
+        margin-top:38px;
+        .right {
+            box-shadow: 12.5px 12.5px 9.3px -9.3px $lightdark;
+            .button {
+                margin-bottom:62px;
+                margin-top:62px;
+                a {
+                    border:3.1px solid $greydark;
+                    font-size:25px;
+                    padding:15.6px 62px 15.6px 62px;
+                }
+            }
+            h4 {
+                @include h4_2500;
+            }
+            h5 {
+                font-size:31px;
+            }
+            .mail_address {
+                margin-top:22px;
+                img {
+                    height:27px;
+                    width:38px;
+                }
+                .mail {
+                    margin-left:15.6px;
+                }
+            }
+            p {
+                font-size:25px;
+            }
+            .phone_number {
+                margin-top:38px;
+                img {
+                    height:38px;
+                    width:38px;
+                }
+                .number {
+                    margin-left:15.6px;
+                }
+            }
+            .text {
+                margin-left:116px;
+                margin-top:46px;
+            }
+        }
+    }
+    .worth {
+        .content {
+            padding:156px;
+            .button {
+                border:3.1px solid $light;
+                font-size:25px;
+                margin-left:7.7px;
+            }
+            p {
+                font-size:25px;
+            }
+            .type {
+                font-size:25px;
+                width:702px;
+            }
+        }
+    }
+}
+
+
+@media (min-width:2501px) and (max-width:3125px) {
+    .contact {
+        margin-top:57px;
+        .content {
+            margin-bottom:57px;
+            margin-top:57px;
+            form {
+                margin-top:47px;
+                .form_field {
+                    border:27px solid transparent;
+                    .field {
+                        font-size:31px;
+                        height:77px;
+                        width:633px;
+                    }
+                }
+                .form_fieldMessage {
+                    border:27px solid transparent;
+                    textarea {
+                        font-size:31px;
+                        height:390px;
+                        width:1366px;
+                    }
+                }
+                .mail {
+                    margin-left:57px;
+                    img {
+                        height:47px;
+                        width:65px;
+                    }
+                }
+                p {
+                    font-size:31px;
+                    margin-left:19.5px;
+                }
+                .phone {
+                    margin-left:27px;
+                    img {
+                        height:47px;
+                        width:47px;
+                    }
+                }
+                .social {
+                    margin-left:57px;
+                    img {
+                        height:50px;
+                        margin-right:13.5px;
+                        width:51px;
+                    }
+                }
+                .submit {
+                    border:1.95px solid $light;
+                    font-size:31px;
+                    margin-left:27px;
+                    margin-top:27px;
+                    padding:19.5px 77px 19.5px 77px;
+                }
+            }
+            h5 {
+                font-size:38px;
+                margin-left:27px;
+            }
+        }
+    }
+    footer {
+        box-shadow: 15.6px 15.6px 11.6px -11.6px $lightdark;
+        margin-bottom:57px;
+        margin-top:57px;
+        .bottom {
+            font-size:31px;
+            margin-bottom:57px;
+            margin-left:195px;
+            margin-top:47px;
+        }
+        .content {
+            margin-left:195px;
+            margin-top:57px;
+            width:1560px;
+            h5 {
+                font-size:38px;
+            }
+            .info {
+                margin-top:38px;
+                .phone {
+                    height:47px;
+                    width:47px;
+                }
+            }
+            .line {
+                height:3.8px;
+                width:1560px;
+            }
+            .mail_info {
+                margin-top:27px;
+                .email {
+                    margin-left:19.5px;
+                }
+                .mail {
+                    height:35px;
+                    width:47px;
+                }
+            }
+            .menu {
+                margin-top:38px;
+                a {
+                    font-size:31px;
+                }
+            }
+            .number {
+                margin-left:19.5px;
+            }
+            p {
+                font-size:31px;
+            }
+        }
+    }
+    .properties {
+        padding-bottom:66px;
+        .content {
+            margin-top:27px;
+            .caledon {
+                border:27px solid $grey;
+                .img_background {
+                    a {
+                        border:1.95px solid $light;
+                        font-size:31px;
+                        padding:19.5px 96px 19.5px 96px;
+                        &:hover {
+                            border:1.95px solid $dark;
+                        }
+                    }
+                }
+            }
+            .etobicoke {
+                border:27px solid $grey;
+                .img_background {
+                    a {
+                        border:1.95px solid $light;
+                        font-size:31px;
+                        padding:19.5px 96px 19.5px 96px;
+                    }
+                }
+            }
+            .mississauga {
+                border:27px solid $grey;
+                .img_background {
+                    a {
+                        border:1.95px solid $light;
+                        font-size:31px;
+                        padding:19.5px 96px 19.5px 96px;
+                    }
+                }
+            }
+            .mississauga_transparent {
+                border:27px solid $grey;
+                .img_background {
+                    a {
+                        border:1.95px solid $light;
+                        font-size:31px;
+                        padding:19.5px 96px 19.5px 96px;
+                        &:hover {
+                            border:1.95px solid $dark;
+                        }
+                    }
+                }
+            }
+            .toronto {
+                border:27px solid $grey;
+                .img_background {
+                    a {
+                        border:1.95px solid $light;
+                        font-size:31px;
+                        padding:19.5px 96px 19.5px 96px;
+                    }
+                }
+            }
+            .toronto_transparent {
+                border:27px solid $grey;
+                .img_background {
+                    a {
+                        border:1.95px solid $light;
+                        font-size:31px;
+                        padding:19.5px 96px 19.5px 96px;
+                        &:hover {
+                            border:1.95px solid $dark;
+                        }
+                    }
+                }
+            }
+        }
+        .heading {
+            margin-top:66px;
+            h5 {
+                font-size:38px;
+                margin-left:27px;
+            }
+        }
+    }
+    .testimonials {
+        margin-top:47px;
+        .content {
+            margin-bottom:195px;
+            margin-top:195px;
+            .heading {
+                height:333px;
+                width:390px;
+                h5 {
+                    font-size:38px;
+                    top:222px;
+                }
+            }
+            p {
+                font-size:31px;
+                margin-top:66px;
+            }
+            .slide {
+                height:585px;
+                .carousel-inner {
+                    margin-top:77px;
+                }
+            }
+        }
+    }
+    .tina {
+        margin-top:47px;
+        .right {
+            box-shadow: 15.6px 15.6px 11.6px -11.6px $lightdark;
+            .button {
+                margin-bottom:77px;
+                margin-top:77px;
+                a {
+                    border:3.8px solid $greydark;
+                    font-size:31px;
+                    padding:19.5px 77px 19.5px 77px;
+                }
+            }
+            h4 {
+                @include h4_3125;
+            }
+            h5 {
+                font-size:38px;
+            }
+            .mail_address {
+                margin-top:27px;
+                img {
+                    height:33px;
+                    width:47px;
+                }
+                .mail {
+                    margin-left:19.5px;
+                }
+            }
+            p {
+                font-size:31px;
+            }
+            .phone_number {
+                margin-top:47px;
+                img {
+                    height:47px;
+                    width:47px;
+                }
+                .number {
+                    margin-left:19.5px;
+                }
+            }
+            .text {
+                margin-left:145px;
+                margin-top:57px;
+            }
+        }
+    }
+    .worth {
+        .content {
+            padding:195px;
+            .button {
+                border:3.8px solid $light;
+                font-size:31px;
+                margin-left:9.6px;
+            }
+            p {
+                font-size:31px;
+            }
+            .type {
+                font-size:31px;
+                width:877px;
+            }
+        }
+    }
+}
+
+
+@media (min-width:3126px) {
+    .contact {
+        margin-top:71px;
+        .content {
+            margin-bottom:71px;
+            margin-top:71px;
+            form {
+                margin-top:58px;
+                .form_field {
+                    border:33px solid transparent;
+                    .field {
+                        font-size:38px;
+                        height:96px;
+                        width:791px;
+                    }
+                }
+                .form_fieldMessage {
+                    border:33px solid transparent;
+                    textarea {
+                        font-size:38px;
+                        height:487px;
+                        width:1707px;
+                    }
+                }
+                .mail {
+                    margin-left:71px;
+                    img {
+                        height:58px;
+                        width:81px;
+                    }
+                }
+                p {
+                    font-size:38px;
+                    margin-left:24.3px;
+                }
+                .phone {
+                    margin-left:33px;
+                    img {
+                        height:58px;
+                        width:58px;
+                    }
+                }
+                .social {
+                    margin-left:71px;
+                    img {
+                        height:62px;
+                        margin-right:16.8px;
+                        width:63px;
+                    }
+                }
+                .submit {
+                    border:2.43px solid $light;
+                    font-size:38px;
+                    margin-left:33px;
+                    margin-top:33px;
+                    padding:24.3px 96px 24.3px 96px;
+                }
+            }
+            h5 {
+                font-size:47px;
+                margin-left:33px;
+            }
+        }
+    }
+    footer {
+        box-shadow: 19.5px 19.5px 14.5px -14.5px $lightdark;
+        margin-bottom:71px;
+        margin-top:71px;
+        .bottom {
+            font-size:38px;
+            margin-bottom:71px;
+            margin-left:243px;
+            margin-top:58px;
+        }
+        .content {
+            margin-left:243px;
+            margin-top:71px;
+            width:1950px;
+            h5 {
+                font-size:47px;
+            }
+            .info {
+                margin-top:47px;
+                .phone {
+                    height:58px;
+                    width:58px;
+                }
+            }
+            .line {
+                height:4.7px;
+                width:1950px;
+            }
+            .mail_info {
+                margin-top:33px;
+                .email {
+                    margin-left:24.3px;
+                }
+                .mail {
+                    height:43px;
+                    width:58px;
+                }
+            }
+            .menu {
+                margin-top:47px;
+                a {
+                    font-size:38px;
+                }
+            }
+            .number {
+                margin-left:24.3px;
+            }
+            p {
+                font-size:38px;
+            }
+        }
+    }
+    .properties {
+        padding-bottom:82px;
+        .content {
+            margin-top:33px;
+            .caledon {
+                border:33px solid $grey;
+                .img_background {
+                    a {
+                        border:2.43px solid $light;
+                        font-size:38px;
+                        padding:24.3px 120px 24.3px 120px;
+                        &:hover {
+                            border:2.43px solid $dark;
+                        }
+                    }
+                }
+            }
+            .etobicoke {
+                border:33px solid $grey;
+                .img_background {
+                    a {
+                        border:2.43px solid $light;
+                        font-size:38px;
+                        padding:24.3px 120px 24.3px 120px;
+                    }
+                }
+            }
+            .mississauga {
+                border:33px solid $grey;
+                .img_background {
+                    a {
+                        border:2.43px solid $light;
+                        font-size:38px;
+                        padding:24.3px 120px 24.3px 120px;
+                    }
+                }
+            }
+            .mississauga_transparent {
+                border:33px solid $grey;
+                .img_background {
+                    a {
+                        border:2.43px solid $light;
+                        font-size:38px;
+                        padding:24.3px 120px 24.3px 120px;
+                        &:hover {
+                            border:2.43px solid $dark;
+                        }
+                    }
+                }
+            }
+            .toronto {
+                border:33px solid $grey;
+                .img_background {
+                    a {
+                        border:2.43px solid $light;
+                        font-size:38px;
+                        padding:24.3px 120px 24.3px 120px;
+                    }
+                }
+            }
+            .toronto_transparent {
+                border:33px solid $grey;
+                .img_background {
+                    a {
+                        border:2.43px solid $light;
+                        font-size:38px;
+                        padding:24.3px 120px 24.3px 120px;
+                        &:hover {
+                            border:2.43px solid $dark;
+                        }
+                    }
+                }
+            }
+        }
+        .heading {
+            margin-top:82px;
+            h5 {
+                font-size:47px;
+                margin-left:33px;
+            }
+        }
+    }
+    .testimonials {
+        margin-top:58px;
+        .content {
+            margin-bottom:243px;
+            margin-top:243px;
+            .heading {
+                height:416px;
+                width:487px;
+                h5 {
+                    font-size:47px;
+                    top:277px;
+                }
+            }
+            p {
+                font-size:38px;
+                margin-top:82px;
+            }
+            .slide {
+                height:731px;
+                .carousel-inner {
+                    margin-top:96px;
+                }
+            }
+        }
+    }
+    .tina {
+        margin-top:58px;
+        .right {
+            box-shadow: 19.5px 19.5px 14.5px -14.5px $lightdark;
+            .button {
+                margin-bottom:96px;
+                margin-top:96px;
+                a {
+                    border:4.7px solid $greydark;
+                    font-size:38px;
+                    padding:24.3px 96px 24.3px 96px;
+                }
+            }
+            h4 {
+                @include h4_3850;
+            }
+            h5 {
+                font-size:47px;
+            }
+            .mail_address {
+                margin-top:33px;
+                img {
+                    height:41px;
+                    width:58px;
+                }
+                .mail {
+                    margin-left:24.3px;
+                }
+            }
+            p {
+                font-size:38px;
+            }
+            .phone_number {
+                margin-top:58px;
+                img {
+                    height:58px;
+                    width:58px;
+                }
+                .number {
+                    margin-left:24.3px;
+                }
+            }
+            .text {
+                margin-left:181px;
+                margin-top:71px;
+            }
+        }
+    }
+    .worth {
+        .content {
+            padding:243px;
+            .button {
+                border:4.7px solid $light;
+                font-size:38px;
+                margin-left:12px;
+            }
+            p {
+                font-size:38px;
+            }
+            .type {
+                font-size:38px;
+                width:1096px;
+            }
+        }
+    }
+}
